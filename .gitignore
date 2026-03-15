@@ -6,3 +6,5 @@ venv/
 *.bbl
 *.blg
 *.synctex.gz
+fabric/secdt.tar.gz
+*.tar.gz
