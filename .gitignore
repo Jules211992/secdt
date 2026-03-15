@@ -8,3 +8,4 @@ venv/
 *.synctex.gz
 fabric/secdt.tar.gz
 *.tar.gz
+caliper/node_modules/
