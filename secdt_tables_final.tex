@@ -1,0 +1,272 @@
+% ============================================================
+% SecDT — IEEE IoT-J Tables
+% All 7 tables — double-column IEEE format
+% ============================================================
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{rotating}
+
+\begin{document}
+
+% ============================================================
+% TABLE 1 — Distributed Caliper Performance
+% ============================================================
+\begin{table*}[!t]
+\centering
+\caption{Distributed Caliper Performance Across Target Loads (3 Peer VMs, GoLevelDB, BatchSize = 10\,000, BatchTimeout = 500\,ms)}
+\label{tab:caliper_distributed}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{%
+  S[table-format=4.0]
+  S[table-format=1.0]
+  S[table-format=5.0]
+  S[table-format=4.1]
+  S[table-format=4.1]
+  S[table-format=4.1]
+  S[table-format=5.1]
+  S[table-format=1.2]
+  S[table-format=1.2]
+  S[table-format=6.0]
+  S[table-format=1.0]
+}
+\toprule
+{\textbf{Target}} & {\textbf{Orgs}} & {\textbf{Total}} & {\textbf{P1 TPS}} & {\textbf{P2 TPS}} & {\textbf{P3 TPS}} & {\textbf{Agg. TPS}} & {\textbf{Mean Lat.}} & {\textbf{Max Lat.}} & {\textbf{Succ.}} & {\textbf{Fail}} \\
+{\textbf{TPS/VM}} & {} & {\textbf{TPS}} & {} & {} & {} & {} & {\textbf{(s)}} & {\textbf{(s)}} & {\textbf{Txns}} & {} \\
+\midrule
+1000 & 3 & 3000 & 627.5 & 622.3 & 619.7 & 1869.5 & 0.88 & 1.50 & 18000 & 0 \\
+1500 & 3 & 4500 & 715.6 & 711.2 & 708.8 & 2135.6 & 1.02 & 1.83 & 27000 & 0 \\
+2000 & 3 & 6000 & 741.1 & 737.8 & 733.2 & 2212.1 & 1.05 & 1.90 & 36000 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% ============================================================
+% TABLE 2 — Nominal SecDT Latency Results
+% ============================================================
+\begin{table*}[!t]
+\centering
+\caption{Nominal SecDT End-to-End Latency Results (10 runs, 100\% success rate, CMAPSS FD001)}
+\label{tab:nominal_latency}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{%
+  l
+  S[table-format=1.0]
+  S[table-format=1.1]
+  S[table-format=4.0]
+  S[table-format=4.1]
+  S[table-format=4.1]
+  S[table-format=4.1]
+  S[table-format=4.1]
+  S[table-format=3.1]
+  S[table-format=3.1]
+  S[table-format=3.1]
+  S[table-format=3.1]
+  S[table-format=3.1]
+  S[table-format=3.1]
+  S[table-format=3.1]
+  S[table-format=3.1]
+}
+\toprule
+\multirow{2}{*}{\textbf{Runset}} &
+\multirow{2}{*}{\shortstack{\textbf{Runs}}} &
+\multirow{2}{*}{\shortstack{\textbf{Succ.}\\\textbf{Rate}}} &
+\multirow{2}{*}{\shortstack{\textbf{Emit.}\\\textbf{(ms)}}} &
+\multicolumn{4}{c}{\textbf{End-to-End Latency (ms)}} &
+\multicolumn{4}{c}{\textbf{IPFS Latency (ms)}} &
+\multicolumn{4}{c}{\textbf{Fabric Commit (ms)}} \\
+\cmidrule(lr){5-8}\cmidrule(lr){9-12}\cmidrule(lr){13-16}
+ & & & & \textbf{Mean} & \textbf{Med.} & \textbf{P95} & \textbf{P99}
+         & \textbf{Mean} & \textbf{Med.} & \textbf{P95} & \textbf{P99}
+         & \textbf{Mean} & \textbf{Med.} & \textbf{P95} & \textbf{P99} \\
+\midrule
+phase4\_s1 & 10 & 1.0 & 1000 & 915.3 & 911.0 & 937.2 & 938.6 & 95.5 & 94.0 & 103.1 & 103.8 & 661.4 & 658.5 & 675.3 & 677.5 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% ============================================================
+% TABLE 3 — Scalability 10–100 Machines
+% ============================================================
+\begin{table*}[!t]
+\centering
+\caption{Scalability of Digital Twins from 10 to 100 Machines (100\% success rate on all cases)}
+\label{tab:scalability}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{%
+  S[table-format=3.0]
+  S[table-format=4.0]
+  S[table-format=3.0]
+  S[table-format=1.3]
+  S[table-format=5.0]
+  S[table-format=6.0]
+  S[table-format=3.2]
+  S[table-format=4.2]
+  S[table-format=4.2]
+  S[table-format=3.2]
+  S[table-format=3.2]
+}
+\toprule
+{\textbf{Machines}} & {\textbf{Interval}} & {\textbf{Runs}} & {\textbf{Succ.}} & {\textbf{Thr.}} & {\textbf{Net Cost}} & {\textbf{E2E Mean}} & {\textbf{E2E P95}} & {\textbf{E2E P99}} & {\textbf{IPFS Mean}} & {\textbf{Fabric Mean}} \\
+{} & {\textbf{(ms)}} & {} & {\textbf{Rate}} & {\textbf{(rps)}} & {\textbf{(bytes)}} & {\textbf{(ms)}} & {\textbf{(ms)}} & {\textbf{(ms)}} & {\textbf{(ms)}} & {\textbf{(ms)}} \\
+\midrule
+10 & 500 & 10 & 1.000 & 0.608 & 9238 & 911.80 & 930.85 & 933.37 & 97.90 & 655.60 \\
+10 & 1000 & 10 & 1.000 & 0.465 & 9278 & 916.80 & 932.60 & 936.92 & 99.10 & 660.20 \\
+25 & 500 & 25 & 1.000 & 0.610 & 23156 & 909.24 & 924.00 & 930.84 & 95.60 & 659.96 \\
+25 & 1000 & 25 & 1.000 & 0.466 & 23256 & 913.88 & 932.00 & 935.28 & 96.28 & 659.44 \\
+50 & 500 & 50 & 1.000 & 0.608 & 46362 & 916.26 & 934.55 & 938.00 & 100.58 & 660.34 \\
+50 & 1000 & 50 & 1.000 & 0.465 & 46562 & 919.94 & 931.55 & 933.51 & 99.88 & 662.28 \\
+100 & 500 & 100 & 1.000 & 0.600 & 93198 & 936.25 & 1014.10 & 1031.21 & 126.56 & 655.79 \\
+100 & 1000 & 100 & 1.000 & 0.462 & 93598 & 935.40 & 1005.05 & 1020.16 & 120.49 & 660.16 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% ============================================================
+% TABLE 4 — Baseline Comparison
+% ============================================================
+\begin{table*}[!t]
+\centering
+\caption{Baseline Comparison: PostgreSQL Centralized vs.\ Fabric-Only vs.\ SecDT Full (20 runs each, emission interval = 500\,ms)}
+\label{tab:baseline}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{%
+  l
+  S[table-format=2.0]
+  S[table-format=1.3]
+  S[table-format=1.3]
+  S[table-format=3.2]
+  S[table-format=3.2]
+  S[table-format=4.0]
+  S[table-format=4.0]
+  S[table-format=5.0]
+  l
+  l
+}
+\toprule
+{\textbf{System}} & {\textbf{Runs}} & {\textbf{Succ.}} & {\textbf{Thr.}} & {\textbf{Mean Lat.}} & {\textbf{P95 Lat.}} & {\textbf{On-chain}} & {\textbf{Off-chain}} & {\textbf{DB Total}} & {\textbf{Hist. Recon.}} & {\textbf{Proof}} \\
+ & & {\textbf{Rate}} & {\textbf{(rps)}} & {\textbf{(ms)}} & {\textbf{(ms)}} & {\textbf{(bytes)}} & {\textbf{(bytes)}} & {\textbf{(bytes)}} & & {\textbf{Strength}} \\
+\midrule
+PostgreSQL Centralized & 20 & 1.000 & 1.091 & 171.70 & 186.55 & 0 & 0 & 15816 & Yes & Low \\
+Fabric-Only & 20 & 1.000 & 0.648 & 805.55 & 824.20 & 3832 & 0 & 0 & Yes & Medium \\
+SecDT Full (IPFS + Fabric) & 20 & 1.000 & 0.610 & 902.80 & 925.20 & 4332 & 8658 & 0 & Yes & \textbf{High} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% ============================================================
+% TABLE 5 — Storage and Overhead Comparison
+% ============================================================
+\begin{table*}[!t]
+\centering
+\caption{Storage and Overhead Analysis Across Architecture Cases (20 runs each, emission interval = 500\,ms)}
+\label{tab:overhead}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{%
+  l
+  S[table-format=2.0]
+  S[table-format=1.3]
+  S[table-format=4.2]
+  S[table-format=5.2]
+  S[table-format=5.3]
+  S[table-format=7.0]
+  S[table-format=6.0]
+  S[table-format=4.0]
+  S[table-format=4.0]
+}
+\toprule
+{\textbf{Case}} & {\textbf{Runs}} & {\textbf{Succ.}} & {\textbf{Mean Lat.}} & {\textbf{CPU Busy}} & {\textbf{Mem $\Delta$}} & {\textbf{Net. Total}} & {\textbf{Data Manip.}} & {\textbf{On-chain}} & {\textbf{Off-chain}} \\
+ & & {\textbf{Rate}} & {\textbf{(ms)}} & {\textbf{(\%)}} & {\textbf{(MB)}} & {\textbf{(bytes)}} & {\textbf{(bytes)}} & {\textbf{(bytes)}} & {\textbf{(bytes)}} \\
+\midrule
+A — Local only     & 20 & 1.000 & 11.30 & 12.778 & 0.325 & 7760 & 18616 & 0 & 0 \\
+B — IPFS only      & 20 & 1.000 & 106.10 & 10.281 & {$-$0.046} & 142994 & 19116 & 0 & 8618 \\
+C — Fabric only    & 20 & 1.000 & 796.90 & 6.042 & {$-$6.906} & 4373267 & 23448 & 3672 & 0 \\
+D — IPFS + Fabric  & 20 & 1.000 & 890.20 & 6.204 & {$-$6.340} & 4608096 & 34726 & 4372 & 8698 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% ============================================================
+% TABLE 6 — Security, Audit, and Resilience Summary
+% ============================================================
+\begin{table*}[!t]
+\centering
+\caption{Security, Audit, and Resilience Results (Phase S3 and Phase S6)}
+\label{tab:security_resilience}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{%
+  l l l c S[table-format=1.0] l S[table-format=3.0]
+}
+\toprule
+{\textbf{Phase}} & {\textbf{Scenario ID}} & {\textbf{Scenario Name}} & {\textbf{Success}} & {\textbf{Hist. Len.}} & {\textbf{Key Validation Flag}} & {\textbf{Timing (ms)}} \\
+\midrule
+S3 & S3-A & Tampering before anchoring    & \checkmark & 1 & tamper\_detected = True       & 911 \\
+S3 & S3-B & Replay / stale snapshot        & \checkmark & 2 & replay\_detected = True        & — \\
+S3 & S3-C & Unauthorized registration      & \checkmark & — & unauthorized\_rejected = True  & — \\
+S3 & S3-D & Audit reconstruction           & \checkmark & 3 & all\_consistent = True (3/3)   & — \\
+\midrule
+S6 & S6-1 & IPFS loss — 1 node             & \checkmark & 1 & retrievable\_after\_failure = True & 16 \\
+S6 & S6-2 & IPFS loss — 2 nodes            & \checkmark & 1 & retrievable\_after\_failure = True & 20 \\
+S6 & S6-3 & Orderer loss (non-leader)      & \checkmark & 1 & service\_continuity\_preserved = True & 655 \\
+S6 & S6-4 & Peer loss                      & \checkmark & 1 & service\_continuity\_preserved = True & 672 \\
+\midrule
+\multicolumn{7}{l}{\textit{Overall rates: tamper detection = 100\%, unauthorized rejection = 100\%, availability = 100\%, IPFS retrievability = 100\%}} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% ============================================================
+% TABLE 7 — IPFS Storage Performance by File Size
+% ============================================================
+\begin{table*}[!t]
+\centering
+\caption{IPFS Storage and Retrieval Performance Across File Sizes (5 runs per size, 100\% success and hash consistency on all cases)}
+\label{tab:ipfs_perf}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{%
+  l
+  S[table-format=8.0]
+  S[table-format=1.0]
+  S[table-format=1.1]
+  S[table-format=1.1]
+  S[table-format=3.2]
+  S[table-format=3.2]
+  S[table-format=3.2]
+  S[table-format=3.2]
+  S[table-format=3.4]
+  S[table-format=3.4]
+  S[table-format=3.3]
+  S[table-format=3.3]
+}
+\toprule
+\multirow{2}{*}{\textbf{Size}} &
+\multirow{2}{*}{\shortstack{\textbf{Bytes}}} &
+\multirow{2}{*}{\textbf{Runs}} &
+\multirow{2}{*}{\shortstack{\textbf{Add}\\\textbf{Succ.}}} &
+\multirow{2}{*}{\shortstack{\textbf{Cat}\\\textbf{Succ.}}} &
+\multicolumn{2}{c}{\textbf{Add Latency (ms)}} &
+\multicolumn{2}{c}{\textbf{Cat Latency (ms)}} &
+\multicolumn{2}{c}{\textbf{Write (MB/s)}} &
+\multicolumn{2}{c}{\textbf{Read (MB/s)}} \\
+\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}
+& & & & & \textbf{Mean} & \textbf{P95} & \textbf{Mean} & \textbf{P95} & \textbf{Mean} & \textbf{P95} & \textbf{Mean} & \textbf{P95} \\
+\midrule
+1\,KB   &    1024 & 5 & 1.0 & 1.0 & 40.18 & 44.84 & 2.16 & 2.35 & 0.0246 & 0.0283 & 0.455 & 0.501 \\
+10\,KB  &   10240 & 5 & 1.0 & 1.0 & 40.26 & 47.19 & 2.26 & 2.40 & 0.2455 & 0.2705 & 4.335 & 4.725 \\
+100\,KB &  102400 & 5 & 1.0 & 1.0 & 41.16 & 45.21 & 3.33 & 3.83 & 2.385 & 2.608 & 29.63 & 32.64 \\
+256\,KB &  262144 & 5 & 1.0 & 1.0 & 44.76 & 60.75 & 6.12 & 10.67 & 5.824 & 6.589 & 48.10 & 65.64 \\
+512\,KB &  524288 & 5 & 1.0 & 1.0 & 43.74 & 49.73 & 10.28 & 22.04 & 11.56 & 13.29 & 66.68 & 85.69 \\
+1\,MB   & 1048576 & 5 & 1.0 & 1.0 & 46.94 & 48.84 & 8.75 & 10.94 & 21.34 & 22.51 & 117.38 & 138.81 \\
+2\,MB   & 2097152 & 5 & 1.0 & 1.0 & 58.22 & 68.61 & 11.49 & 13.12 & 35.04 & 40.12 & 176.39 & 203.74 \\
+5\,MB   & 5242880 & 5 & 1.0 & 1.0 & 76.07 & 84.09 & 23.63 & 29.99 & 66.07 & 71.32 & 219.79 & 266.52 \\
+10\,MB  &10485760 & 5 & 1.0 & 1.0 & 108.30 & 137.57 & 50.69 & 73.31 & 94.77 & 107.12 & 221.32 & 338.04 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\end{document}
