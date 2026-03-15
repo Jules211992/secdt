@@ -1,0 +1,57 @@
+test:
+  name: secdt-registerstate-benchmark-phase2
+  description: Benchmark Caliper parallèle pour RegisterState sur SecDT après tuning batching
+  workers:
+    type: local
+    number: 8
+
+  rounds:
+    - label: registerstate-rate-500
+      description: RegisterState avec 500 TPS
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 500
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-1000
+      description: RegisterState avec 1000 TPS
+      txNumber: 6000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1000
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-1500
+      description: RegisterState avec 1500 TPS
+      txNumber: 9000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1500
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-2000
+      description: RegisterState avec 2000 TPS
+      txNumber: 12000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 2000
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-3000
+      description: RegisterState avec 3000 TPS
+      txNumber: 18000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 3000
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js

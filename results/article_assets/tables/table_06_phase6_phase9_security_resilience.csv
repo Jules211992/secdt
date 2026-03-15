@@ -1,0 +1,9 @@
+phase,scenario,name,success,history_length,key_validation_flag,timing_or_recovery_ms
+phase6_s3,S3-A,tampering_before_anchoring,True,1,True,
+phase6_s3,S3-B,replay_stale_snapshot,True,2,True,
+phase6_s3,S3-C,unauthorized_registration,True,,True,
+phase6_s3,S3-D,audit_reconstruction,True,3,True,
+phase9_s6,s6_ipfs_loss_1_node,,True,1,True,16
+phase9_s6,s6_ipfs_loss_2_nodes,,True,1,True,20
+phase9_s6,s6_orderer_loss,,True,1,True,
+phase9_s6,s6_peer_loss,,True,1,True,

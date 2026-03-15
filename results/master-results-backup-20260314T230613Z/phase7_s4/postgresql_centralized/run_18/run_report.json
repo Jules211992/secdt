@@ -1,0 +1,19 @@
+{
+  "system": "postgresql_centralized",
+  "run_index": 18,
+  "machine_id": "machine-0001-pg-phase7_s4_20260314T212954Z-r18",
+  "success": true,
+  "timing_ms": {
+    "end_to_end_total": 168
+  },
+  "storage_bytes": {
+    "on_chain": 0,
+    "off_chain": 0,
+    "database_total": 792
+  },
+  "auditability": {
+    "history_reconstructable": true,
+    "history_length": 1,
+    "integrity_proof_strength": "low"
+  }
+}

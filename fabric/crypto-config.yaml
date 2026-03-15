@@ -1,0 +1,18 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: secdt.com
+    Specs:
+      - Hostname: orderer-fabric-1
+      - Hostname: orderer-fabric-2
+      - Hostname: orderer-fabric-3
+
+PeerOrgs:
+  - Name: Peer
+    Domain: secdt.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: peer-fabric-1
+      - Hostname: peer-fabric-2
+      - Hostname: peer-fabric-3
+    Users:
+      Count: 1

@@ -1,0 +1,25 @@
+Distributed benchmark: 1000 TPS per VM
+
+Peer 1
+Throughput: 633.7 TPS
+Average latency: 0.90 s
+Max latency: 1.39 s
+Successful transactions: 12000
+Failed transactions: 0
+
+Peer 2
+Throughput: 665.1 TPS
+Average latency: 0.95 s
+Max latency: 1.66 s
+Successful transactions: 12000
+Failed transactions: 0
+
+Peer 3
+Throughput: 648.3 TPS
+Average latency: 0.93 s
+Max latency: 1.44 s
+Successful transactions: 12000
+Failed transactions: 0
+
+Aggregated throughput
+1947.1 TPS

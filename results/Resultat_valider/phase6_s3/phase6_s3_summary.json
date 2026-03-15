@@ -1,0 +1,91 @@
+{
+  "phase": "phase6_s3",
+  "runset_id": "phase6_s3_20260314T204859Z",
+  "scenarios": [
+    {
+      "scenario": "S3-A",
+      "name": "tampering_before_anchoring",
+      "machine_id": "machine-0001-s3a-20260314T204859Z",
+      "cid": "Qmb3oNo4y9ecYqkVr1y3QsZBpLNmY4AaynjWQnvSnCzs2s",
+      "stored_hash": "4ca4e6682c9dfdcd390ca274c6a02e682712d526c8f87b2cefe7dbe9f332b6af",
+      "ipfs_content_hash": "8750df2d1420ce64cbe396e2f41b30abad5bba1ee345c4799f09e06b86318452",
+      "invoke_ok": true,
+      "verify_ok": true,
+      "history_ok": true,
+      "history_length": 1,
+      "stored_hash_match": true,
+      "stored_cid_match": true,
+      "tamper_detected": true,
+      "success": true,
+      "timing_ms": {
+        "ipfs_add_cid": 90,
+        "ipfs_cat_check": 17,
+        "fabric_submit_commit": 663,
+        "fabric_query_phase": 141,
+        "end_to_end_total": 911
+      }
+    },
+    {
+      "scenario": "S3-B",
+      "name": "replay_stale_snapshot",
+      "machine_id": "machine-replay-20260314T204859Z",
+      "history_length": 2,
+      "cycles_in_history": [
+        1,
+        2
+      ],
+      "head_cycle": 1,
+      "max_cycle_seen": 2,
+      "replay_detected": true,
+      "newer_invoke_ok": true,
+      "older_replay_invoke_ok": true,
+      "success": true
+    },
+    {
+      "scenario": "S3-C",
+      "name": "unauthorized_registration",
+      "machine_id": "machine-0001-s3c-20260314T204859Z",
+      "invoke_ok": false,
+      "unauthorized_rejected": true,
+      "evidence": "Error: error endorsing invoke: rpc error: code = Unknown desc = error validating proposal: access denied: channel [secdt-channel] creator org unknown, creator is malformed - proposal response: <nil>",
+      "success": true
+    },
+    {
+      "scenario": "S3-D",
+      "name": "audit_reconstruction",
+      "machine_id": "machine-audit-20260314T204859Z",
+      "history_length": 3,
+      "records_checked": 3,
+      "all_consistent": true,
+      "records": [
+        {
+          "cid": "QmTZYVbVZkU5qwbQMmx6gdM5PWpxfjQxAVqhuAdMt4fAuZ",
+          "stored_hash": "7fe3abfb1e584919987395907e3125e74a26a56aeae86b93256921ceb1ed31a6",
+          "ipfs_hash": "7fe3abfb1e584919987395907e3125e74a26a56aeae86b93256921ceb1ed31a6",
+          "consistent": true
+        },
+        {
+          "cid": "QmYScufzQPbj5M1JScBJh3s6X53qWQCSDh6ruHDyX3M3KV",
+          "stored_hash": "9711400b79736d7dfc0715fc2194d251c2ec0e1f9f4a0f55fa1fa94e26a51769",
+          "ipfs_hash": "9711400b79736d7dfc0715fc2194d251c2ec0e1f9f4a0f55fa1fa94e26a51769",
+          "consistent": true
+        },
+        {
+          "cid": "QmfCq4LwKtsfmTGV6PHJkwbSDHXe1sxsGVkJgpYEFkw81J",
+          "stored_hash": "c4ddfd6f2bf7c8ccb7cee152ec3205813b12fdd2e598757a43be593daecb0d7e",
+          "ipfs_hash": "c4ddfd6f2bf7c8ccb7cee152ec3205813b12fdd2e598757a43be593daecb0d7e",
+          "consistent": true
+        }
+      ],
+      "success": true
+    }
+  ],
+  "metrics": {
+    "tamper_detection_rate": 1.0,
+    "replay_detection_rate": 1.0,
+    "unauthorized_rejection_rate": 1.0,
+    "audit_reconstruction_success": 1.0,
+    "cid_hash_consistency": 1.0
+  },
+  "overall_success_rate": 1.0
+}

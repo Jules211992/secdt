@@ -1,0 +1,14 @@
+peer-fabric-1 10.0.0.151
+peer-fabric-2 10.0.0.62
+peer-fabric-3 10.0.0.203
+orderer-fabric-1 10.0.0.160
+orderer-fabric-2 10.0.0.129
+orderer-fabric-3 10.0.0.120
+ipfs-node-1 10.0.0.55
+ipfs-node-2 10.0.0.168
+ipfs-node-3 10.0.0.123
+ipfs-node-4 10.0.0.95
+ipfs-node-5 10.0.0.116
+edge-gateway 10.0.0.224
+postgres-baseline 10.0.0.245
+monitoring 10.0.0.4

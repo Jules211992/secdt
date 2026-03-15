@@ -1,0 +1,24 @@
+{
+  "case": "case_d_ipfs_fabric",
+  "run_index": 19,
+  "machine_id": "machine-0001-hybrid-r19-phase8_s5_20260314T214916Z",
+  "success": true,
+  "timing_ms": {
+    "end_to_end_total": 897
+  },
+  "resource_usage": {
+    "cpu_busy_pct": 6.739,
+    "mem_used_before_mb": 963.508,
+    "mem_used_after_mb": 957.0,
+    "mem_delta_mb": -6.508,
+    "network_rx_bytes": 106815,
+    "network_tx_bytes": 111634,
+    "network_total_bytes": 218449
+  },
+  "storage_bytes": {
+    "data_manipulated_total": 1740,
+    "on_chain": 220,
+    "off_chain": 436
+  },
+  "note": "ipfs_plus_fabric"
+}

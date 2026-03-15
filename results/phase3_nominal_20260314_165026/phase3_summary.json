@@ -1,0 +1,18 @@
+{
+  "phase": "phase3_nominal",
+  "status": "validated",
+  "machine_id": "machine-005",
+  "cid": "QmURgk3LMmvRv8kY5rawsfnmJWtdV7ryxt68njetp9PHvA",
+  "hash": "9238052fcf6deb2780fb8f52317207a7ebe48a7522fa7965035657743277e849",
+  "verify_integrity": true,
+  "history_length": 1,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 11.321,
+    "ipfs_add_cid": 88.966,
+    "ipfs_cat_check": 11.873,
+    "fabric_submit_commit": 664.467,
+    "fabric_query": 152.566,
+    "end_to_end_total": 929.193
+  }
+}

@@ -1,0 +1,31 @@
+name: secdt-fabric-gateway-peer3
+version: "2.0.0"
+
+caliper:
+  blockchain: fabric
+
+channels:
+  - channelName: secdt-channel
+    contracts:
+      - id: secdt
+
+organizations:
+  - mspid: PeerMSP
+    identities:
+      certificates:
+        - name: admin
+          clientPrivateKey:
+            path: /home/ubuntu/secdt-fabric/crypto-config/peerOrganizations/secdt.com/users/Admin@secdt.com/msp/keystore/priv_sk
+          clientSignedCert:
+            path: /home/ubuntu/secdt-fabric/crypto-config/peerOrganizations/secdt.com/users/Admin@secdt.com/msp/signcerts/Admin@secdt.com-cert.pem
+    connectionProfile:
+      path: /home/ubuntu/secdt-caliper-benchmark/networks/secdt-connection-profile-peer3.yaml
+      discover: false
+
+clients:
+  client0:
+    organization: PeerMSP
+    clientPrivateKey:
+      path: /home/ubuntu/secdt-fabric/crypto-config/peerOrganizations/secdt.com/users/Admin@secdt.com/msp/keystore/priv_sk
+    clientSignedCert:
+      path: /home/ubuntu/secdt-fabric/crypto-config/peerOrganizations/secdt.com/users/Admin@secdt.com/msp/signcerts/Admin@secdt.com-cert.pem

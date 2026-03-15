@@ -1,0 +1,24 @@
+{
+  "case": "case_c_fabric_only",
+  "run_index": 3,
+  "machine_id": "machine-0001-fabric-r3-phase8_s5_20260314T214916Z",
+  "success": true,
+  "timing_ms": {
+    "end_to_end_total": 798
+  },
+  "resource_usage": {
+    "cpu_busy_pct": 5.891,
+    "mem_used_before_mb": 936.285,
+    "mem_used_after_mb": 930.078,
+    "mem_delta_mb": -6.207,
+    "network_rx_bytes": 110066,
+    "network_tx_bytes": 109947,
+    "network_total_bytes": 220013
+  },
+  "storage_bytes": {
+    "data_manipulated_total": 1170,
+    "on_chain": 182,
+    "off_chain": 0
+  },
+  "note": "fabric_only"
+}

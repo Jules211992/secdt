@@ -1,0 +1,20 @@
+{
+  "system": "fabric_only",
+  "run_index": 7,
+  "machine_id": "machine-0001-fabriconly-phase7_s4_20260314T212954Z-r7",
+  "success": true,
+  "verify_ok": true,
+  "timing_ms": {
+    "end_to_end_total": 788
+  },
+  "storage_bytes": {
+    "on_chain": 190,
+    "off_chain": 0,
+    "database_total": 0
+  },
+  "auditability": {
+    "history_reconstructable": true,
+    "history_length": 1,
+    "integrity_proof_strength": "medium"
+  }
+}

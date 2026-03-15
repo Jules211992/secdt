@@ -1,0 +1,9 @@
+{
+  "scenario": "S3-C",
+  "name": "unauthorized_registration",
+  "machine_id": "machine-0001-s3c-20260314T204859Z",
+  "invoke_ok": false,
+  "unauthorized_rejected": true,
+  "evidence": "Error: error endorsing invoke: rpc error: code = Unknown desc = error validating proposal: access denied: channel [secdt-channel] creator org unknown, creator is malformed - proposal response: <nil>",
+  "success": true
+}

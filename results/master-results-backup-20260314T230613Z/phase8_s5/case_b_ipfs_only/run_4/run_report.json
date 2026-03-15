@@ -1,0 +1,24 @@
+{
+  "case": "case_b_ipfs_only",
+  "run_index": 4,
+  "machine_id": "machine-0001-ipfs-r4-phase8_s5_20260314T214916Z",
+  "success": true,
+  "timing_ms": {
+    "end_to_end_total": 114
+  },
+  "resource_usage": {
+    "cpu_busy_pct": 9.649,
+    "mem_used_before_mb": 950.633,
+    "mem_used_after_mb": 947.164,
+    "mem_delta_mb": -3.469,
+    "network_rx_bytes": 8084,
+    "network_tx_bytes": 9115,
+    "network_total_bytes": 17199
+  },
+  "storage_bytes": {
+    "data_manipulated_total": 948,
+    "on_chain": 0,
+    "off_chain": 427
+  },
+  "note": "ipfs_only"
+}

@@ -1,0 +1,41 @@
+{
+  "case": "case_b_ipfs_only",
+  "n_runs": 20,
+  "success_rate": 1.0,
+  "latency_ms": {
+    "mean": 106.1,
+    "median": 105.5,
+    "p95": 114.05,
+    "p99": 114.81
+  },
+  "cpu_busy_pct": {
+    "mean": 10.281,
+    "median": 10.378,
+    "p95": 11.207,
+    "p99": 11.213
+  },
+  "mem_delta_mb": {
+    "mean": -0.046,
+    "median": 0.319,
+    "p95": 0.751,
+    "p99": 1.122
+  },
+  "network_total_bytes": {
+    "mean": 7149.7,
+    "median": 4157.0,
+    "p95": 17215.55,
+    "p99": 17467.11,
+    "sum": 142994
+  },
+  "data_manipulated_bytes": {
+    "mean": 955.8,
+    "median": 956.0,
+    "p95": 962.0,
+    "p99": 962.0,
+    "sum": 19116
+  },
+  "storage_bytes": {
+    "on_chain": 0,
+    "off_chain": 8618
+  }
+}

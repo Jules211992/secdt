@@ -1,0 +1,10 @@
+{
+  "machine_id": "machine-005",
+  "timestamp": "2026-03-14T16:45:00Z",
+  "temperature": 73.2,
+  "pressure": 1.24,
+  "vibration": 0.028,
+  "health_score": 94.6,
+  "cycle": 242,
+  "session_id": "session-005"
+}

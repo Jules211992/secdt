@@ -1,0 +1,26 @@
+{
+  "phase": "phase5_s2_fd001_fixed",
+  "machine_count": 50,
+  "interval_ms": 500,
+  "run_index": 13,
+  "machine_id": "machine-0001-phase5_s2_fd001_fixed_20260314T200018Z-m50-i500-r13",
+  "session_id": "fd001-unit-0001-phase5_s2_fd001_fixed_20260314T200018Z-m50-i500-r13",
+  "cid": "QmPtBefEnQpaDSJUFZNhp74gMifSsRNFYpvYnYBQv39HcK",
+  "hash": "79c7ac5f40969687b89a250e17372cca99229128641d8115d3bfdf53b958bf45",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "history_contains_current_record": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 10,
+    "ipfs_add_cid": 81,
+    "ipfs_cat_check": 15,
+    "fabric_submit_commit": 662,
+    "fabric_query_phase": 147,
+    "end_to_end_total": 915
+  }
+}

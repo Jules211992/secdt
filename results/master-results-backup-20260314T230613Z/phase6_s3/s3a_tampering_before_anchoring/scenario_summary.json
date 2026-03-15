@@ -1,0 +1,23 @@
+{
+  "scenario": "S3-A",
+  "name": "tampering_before_anchoring",
+  "machine_id": "machine-0001-s3a-20260314T204859Z",
+  "cid": "Qmb3oNo4y9ecYqkVr1y3QsZBpLNmY4AaynjWQnvSnCzs2s",
+  "stored_hash": "4ca4e6682c9dfdcd390ca274c6a02e682712d526c8f87b2cefe7dbe9f332b6af",
+  "ipfs_content_hash": "8750df2d1420ce64cbe396e2f41b30abad5bba1ee345c4799f09e06b86318452",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "stored_hash_match": true,
+  "stored_cid_match": true,
+  "tamper_detected": true,
+  "success": true,
+  "timing_ms": {
+    "ipfs_add_cid": 90,
+    "ipfs_cat_check": 17,
+    "fabric_submit_commit": 663,
+    "fabric_query_phase": 141,
+    "end_to_end_total": 911
+  }
+}

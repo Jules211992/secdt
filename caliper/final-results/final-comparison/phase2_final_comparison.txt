@@ -1,0 +1,46 @@
+PHASE 2 FINAL DISTRIBUTED COMPARISON
+
+Distributed 1000
+Peer 1 TPS: 633.7
+Peer 2 TPS: 665.1
+Peer 3 TPS: 648.3
+Aggregated TPS: 1947.1
+Average latency P1: 0.90 s
+Average latency P2: 0.95 s
+Average latency P3: 0.93 s
+Max latency P1: 1.39 s
+Max latency P2: 1.66 s
+Max latency P3: 1.44 s
+Total successes: 36000
+Total failures: 0
+
+Distributed 1500
+Peer 1 TPS: 678.7
+Peer 2 TPS: 677.3
+Peer 3 TPS: 698.7
+Aggregated TPS: 2054.7
+Average latency P1: 0.99 s
+Average latency P2: 0.96 s
+Average latency P3: 0.96 s
+Max latency P1: 1.81 s
+Max latency P2: 1.59 s
+Max latency P3: 1.95 s
+Total successes: 54000
+Total failures: 0
+
+Distributed 2000
+Peer 1 TPS: 689.2
+Peer 2 TPS: 699.9
+Peer 3 TPS: 696.2
+Aggregated TPS: 2085.3
+Average latency P1: 1.03 s
+Average latency P2: 1.05 s
+Average latency P3: 1.01 s
+Max latency P1: 2.49 s
+Max latency P2: 2.06 s
+Max latency P3: 1.81 s
+Total successes: 72000
+Total failures: 0
+
+Conclusion
+The practical throughput plateau is around 2.05k to 2.09k TPS in the current distributed setup.

@@ -1,0 +1,19 @@
+{
+  "machine_id": "machine-audit-20260314T204859Z",
+  "session_id": "session-audit-20260314T204859Z",
+  "health_score": 100.0,
+  "cycle": 1,
+  "hash": "c4ddfd6f2bf7c8ccb7cee152ec3205813b12fdd2e598757a43be593daecb0d7e",
+  "cid": "QmfCq4LwKtsfmTGV6PHJkwbSDHXe1sxsGVkJgpYEFkw81J",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "timing_ms": {
+    "snapshot_hash": 9,
+    "ipfs_add_cid": 83,
+    "ipfs_cat_check": 11,
+    "fabric_submit_commit": 664,
+    "fabric_query_phase": 136,
+    "end_to_end_total": 903
+  }
+}

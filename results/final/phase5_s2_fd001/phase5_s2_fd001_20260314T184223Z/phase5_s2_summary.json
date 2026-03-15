@@ -1,0 +1,448 @@
+{
+  "phase": "phase5_s2_fd001",
+  "runset_id": "phase5_s2_fd001_20260314T184223Z",
+  "n_cases": 15,
+  "cases": [
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 100,
+      "interval_ms": 1000,
+      "n_runs": 100,
+      "success_rate": 0.01,
+      "throughput_rps": 1.083,
+      "network_cost_bytes": 76430,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 923.19,
+          "median": 922.0,
+          "p95": 946.05,
+          "p99": 952.18
+        },
+        "ipfs_total": {
+          "mean": 97.6,
+          "median": 97.5,
+          "p95": 106.05,
+          "p99": 108.01
+        },
+        "fabric_commit": {
+          "mean": 661.38,
+          "median": 661.0,
+          "p95": 672.0,
+          "p99": 679.18
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 100,
+      "interval_ms": 250,
+      "n_runs": 100,
+      "success_rate": 0.01,
+      "throughput_rps": 1.078,
+      "network_cost_bytes": 76030,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 927.42,
+          "median": 925.5,
+          "p95": 948.05,
+          "p99": 952.0
+        },
+        "ipfs_total": {
+          "mean": 100.42,
+          "median": 100.0,
+          "p95": 109.05,
+          "p99": 113.05
+        },
+        "fabric_commit": {
+          "mean": 661.06,
+          "median": 661.0,
+          "p95": 674.05,
+          "p99": 678.04
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 100,
+      "interval_ms": 500,
+      "n_runs": 100,
+      "success_rate": 0.01,
+      "throughput_rps": 1.091,
+      "network_cost_bytes": 76030,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 916.29,
+          "median": 917.0,
+          "p95": 934.05,
+          "p99": 939.08
+        },
+        "ipfs_total": {
+          "mean": 96.63,
+          "median": 96.5,
+          "p95": 106.0,
+          "p99": 108.03
+        },
+        "fabric_commit": {
+          "mean": 657.31,
+          "median": 656.5,
+          "p95": 668.15,
+          "p99": 673.07
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 10,
+      "interval_ms": 1000,
+      "n_runs": 10,
+      "success_rate": 0.1,
+      "throughput_rps": 1.096,
+      "network_cost_bytes": 7594,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 912.2,
+          "median": 909.5,
+          "p95": 924.4,
+          "p99": 927.28
+        },
+        "ipfs_total": {
+          "mean": 98.1,
+          "median": 99.0,
+          "p95": 102.1,
+          "p99": 102.82
+        },
+        "fabric_commit": {
+          "mean": 657.9,
+          "median": 659.0,
+          "p95": 665.3,
+          "p99": 667.46
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 10,
+      "interval_ms": 250,
+      "n_runs": 10,
+      "success_rate": 0.1,
+      "throughput_rps": 1.097,
+      "network_cost_bytes": 7554,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 911.9,
+          "median": 911.5,
+          "p95": 918.65,
+          "p99": 919.73
+        },
+        "ipfs_total": {
+          "mean": 95.6,
+          "median": 96.0,
+          "p95": 100.0,
+          "p99": 100.0
+        },
+        "fabric_commit": {
+          "mean": 659.7,
+          "median": 660.5,
+          "p95": 665.1,
+          "p99": 665.82
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 10,
+      "interval_ms": 500,
+      "n_runs": 10,
+      "success_rate": 0.1,
+      "throughput_rps": 1.088,
+      "network_cost_bytes": 7554,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 919.1,
+          "median": 916.5,
+          "p95": 934.05,
+          "p99": 938.01
+        },
+        "ipfs_total": {
+          "mean": 97.7,
+          "median": 96.0,
+          "p95": 107.75,
+          "p99": 109.55
+        },
+        "fabric_commit": {
+          "mean": 660.8,
+          "median": 662.0,
+          "p95": 666.65,
+          "p99": 667.73
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 25,
+      "interval_ms": 1000,
+      "n_runs": 25,
+      "success_rate": 0.04,
+      "throughput_rps": 1.087,
+      "network_cost_bytes": 18992,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 920.12,
+          "median": 923,
+          "p95": 940.6,
+          "p99": 942.0
+        },
+        "ipfs_total": {
+          "mean": 97.92,
+          "median": 99,
+          "p95": 108.4,
+          "p99": 110.76
+        },
+        "fabric_commit": {
+          "mean": 661.44,
+          "median": 661,
+          "p95": 673.4,
+          "p99": 680.08
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 25,
+      "interval_ms": 250,
+      "n_runs": 25,
+      "success_rate": 0.04,
+      "throughput_rps": 1.088,
+      "network_cost_bytes": 18892,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 919,
+          "median": 920,
+          "p95": 936.2,
+          "p99": 940.8
+        },
+        "ipfs_total": {
+          "mean": 97.8,
+          "median": 98,
+          "p95": 109.4,
+          "p99": 110.0
+        },
+        "fabric_commit": {
+          "mean": 661.04,
+          "median": 662,
+          "p95": 669.0,
+          "p99": 672.04
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 25,
+      "interval_ms": 500,
+      "n_runs": 25,
+      "success_rate": 0.04,
+      "throughput_rps": 1.087,
+      "network_cost_bytes": 18892,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 919.8,
+          "median": 922,
+          "p95": 930.0,
+          "p99": 933.04
+        },
+        "ipfs_total": {
+          "mean": 97.4,
+          "median": 98,
+          "p95": 104.8,
+          "p99": 105.76
+        },
+        "fabric_commit": {
+          "mean": 660.84,
+          "median": 661,
+          "p95": 670.6,
+          "p99": 673.28
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 50,
+      "interval_ms": 1000,
+      "n_runs": 50,
+      "success_rate": 0.02,
+      "throughput_rps": 1.092,
+      "network_cost_bytes": 37998,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 915.64,
+          "median": 914.5,
+          "p95": 937.55,
+          "p99": 944.59
+        },
+        "ipfs_total": {
+          "mean": 103.22,
+          "median": 103.0,
+          "p95": 111.0,
+          "p99": 124.08
+        },
+        "fabric_commit": {
+          "mean": 655.4,
+          "median": 654.0,
+          "p95": 666.65,
+          "p99": 677.18
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 50,
+      "interval_ms": 250,
+      "n_runs": 50,
+      "success_rate": 0.02,
+      "throughput_rps": 1.098,
+      "network_cost_bytes": 37798,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 911.16,
+          "median": 910.5,
+          "p95": 928.55,
+          "p99": 932.55
+        },
+        "ipfs_total": {
+          "mean": 96.6,
+          "median": 97.5,
+          "p95": 106.1,
+          "p99": 107.0
+        },
+        "fabric_commit": {
+          "mean": 657.68,
+          "median": 657.0,
+          "p95": 668.55,
+          "p99": 672.53
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 50,
+      "interval_ms": 500,
+      "n_runs": 50,
+      "success_rate": 0.02,
+      "throughput_rps": 1.099,
+      "network_cost_bytes": 37798,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 909.72,
+          "median": 909.0,
+          "p95": 926.1,
+          "p99": 934.08
+        },
+        "ipfs_total": {
+          "mean": 97.12,
+          "median": 97.0,
+          "p95": 106.55,
+          "p99": 107.51
+        },
+        "fabric_commit": {
+          "mean": 656.5,
+          "median": 657.0,
+          "p95": 666.55,
+          "p99": 668.02
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 75,
+      "interval_ms": 1000,
+      "n_runs": 75,
+      "success_rate": 0.0133,
+      "throughput_rps": 1.084,
+      "network_cost_bytes": 57008,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 922.787,
+          "median": 919,
+          "p95": 938.6,
+          "p99": 1024.18
+        },
+        "ipfs_total": {
+          "mean": 99.827,
+          "median": 96,
+          "p95": 110.6,
+          "p99": 199.8
+        },
+        "fabric_commit": {
+          "mean": 660.48,
+          "median": 660,
+          "p95": 669.0,
+          "p99": 670.0
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 75,
+      "interval_ms": 250,
+      "n_runs": 75,
+      "success_rate": 0.0133,
+      "throughput_rps": 1.09,
+      "network_cost_bytes": 56708,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 917.787,
+          "median": 918,
+          "p95": 936.0,
+          "p99": 939.78
+        },
+        "ipfs_total": {
+          "mean": 98.213,
+          "median": 98,
+          "p95": 107.3,
+          "p99": 111.78
+        },
+        "fabric_commit": {
+          "mean": 656.867,
+          "median": 658,
+          "p95": 666.3,
+          "p99": 667.52
+        }
+      }
+    },
+    {
+      "phase": "phase5_s2_fd001",
+      "machine_count": 75,
+      "interval_ms": 500,
+      "n_runs": 75,
+      "success_rate": 0.0133,
+      "throughput_rps": 1.092,
+      "network_cost_bytes": 56708,
+      "latency_ms": {
+        "end_to_end": {
+          "mean": 915.853,
+          "median": 914,
+          "p95": 937.2,
+          "p99": 950.04
+        },
+        "ipfs_total": {
+          "mean": 99,
+          "median": 98,
+          "p95": 112.3,
+          "p99": 120.38
+        },
+        "fabric_commit": {
+          "mean": 656.253,
+          "median": 657,
+          "p95": 665.3,
+          "p99": 670.3
+        }
+      }
+    }
+  ],
+  "first_detected_saturation": {
+    "machine_count": 100,
+    "interval_ms": 1000,
+    "throughput_rps": 1.083,
+    "success_rate": 0.01
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "machine_count": 50,
+  "interval_ms": 500,
+  "machine_id": "machine-0001-m50-i500",
+  "cid": "QmYBVToDdZBFVNwTvSn2vYU5UQnLvUcwW2EUFzazzpuv8L",
+  "hash": "d4064c4fee245834c46d0edb72c4a4ae4a2bb062ebac8c685e6d49c20393b062",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 10,
+  "cid_matches_history": false,
+  "hash_matches_history": false,
+  "success_end_to_end": false,
+  "timing_ms": {
+    "snapshot_hash": 6,
+    "ipfs_add_cid": 84,
+    "ipfs_cat_check": 17,
+    "fabric_submit_commit": 658,
+    "fabric_query_phase": 140,
+    "end_to_end_total": 905
+  }
+}

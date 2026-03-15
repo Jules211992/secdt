@@ -1,0 +1,2 @@
+runset_id,n_runs,success_rate,emission_interval_ms,end_to_end_mean_ms,end_to_end_median_ms,end_to_end_p95_ms,end_to_end_p99_ms,ipfs_mean_ms,ipfs_median_ms,ipfs_p95_ms,ipfs_p99_ms,fabric_mean_ms,fabric_median_ms,fabric_p95_ms,fabric_p99_ms
+phase4_s1_20260314T172001Z,10,1.0,1000,915.3,911.0,937.2,938.64,95.5,94.0,103.1,103.82,661.4,658.5,675.3,677.46

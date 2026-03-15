@@ -1,0 +1,11 @@
+{
+  "scenario": "s6_peer_loss",
+  "peer_target": "ubuntu@peer-fabric-2",
+  "invoke_ok_during_peer_loss": true,
+  "history_ok_after_peer_loss": true,
+  "history_length": 1,
+  "service_continuity_preserved": true,
+  "recovery_ms": null,
+  "latency_under_failure_ms": 672,
+  "success": true
+}

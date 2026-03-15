@@ -1,0 +1,4 @@
+system,n_runs,success_rate,throughput_rps,latency_mean_ms,latency_p95_ms,on_chain_bytes,off_chain_bytes,database_total_bytes,history_reconstructable,integrity_proof_strength
+postgresql_centralized,20,1.0,1.091,171.7,186.55,0,0,15816,True,low
+fabric_only,20,1.0,0.648,805.55,824.2,3832,0,0,True,medium
+secdt_full,20,1.0,0.61,902.8,925.2,4332,8658,0,True,high

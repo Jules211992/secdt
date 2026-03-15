@@ -1,0 +1,21 @@
+{
+  "system": "fabric_only",
+  "n_runs": 20,
+  "success_rate": 1.0,
+  "throughput_rps": 0.648,
+  "latency_ms": {
+    "mean": 805.55,
+    "median": 803.0,
+    "p95": 824.2,
+    "p99": 827.24
+  },
+  "storage_bytes": {
+    "on_chain": 3832,
+    "off_chain": 0,
+    "database_total": 0
+  },
+  "auditability": {
+    "history_reconstructable": true,
+    "integrity_proof_strength": "medium"
+  }
+}

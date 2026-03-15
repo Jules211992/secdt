@@ -1,0 +1,29 @@
+{
+  "scenario": "S3-D",
+  "name": "audit_reconstruction",
+  "machine_id": "machine-audit-20260314T204859Z",
+  "history_length": 3,
+  "records_checked": 3,
+  "all_consistent": true,
+  "records": [
+    {
+      "cid": "QmTZYVbVZkU5qwbQMmx6gdM5PWpxfjQxAVqhuAdMt4fAuZ",
+      "stored_hash": "7fe3abfb1e584919987395907e3125e74a26a56aeae86b93256921ceb1ed31a6",
+      "ipfs_hash": "7fe3abfb1e584919987395907e3125e74a26a56aeae86b93256921ceb1ed31a6",
+      "consistent": true
+    },
+    {
+      "cid": "QmYScufzQPbj5M1JScBJh3s6X53qWQCSDh6ruHDyX3M3KV",
+      "stored_hash": "9711400b79736d7dfc0715fc2194d251c2ec0e1f9f4a0f55fa1fa94e26a51769",
+      "ipfs_hash": "9711400b79736d7dfc0715fc2194d251c2ec0e1f9f4a0f55fa1fa94e26a51769",
+      "consistent": true
+    },
+    {
+      "cid": "QmfCq4LwKtsfmTGV6PHJkwbSDHXe1sxsGVkJgpYEFkw81J",
+      "stored_hash": "c4ddfd6f2bf7c8ccb7cee152ec3205813b12fdd2e598757a43be593daecb0d7e",
+      "ipfs_hash": "c4ddfd6f2bf7c8ccb7cee152ec3205813b12fdd2e598757a43be593daecb0d7e",
+      "consistent": true
+    }
+  ],
+  "success": true
+}

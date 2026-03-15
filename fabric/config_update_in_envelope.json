@@ -1,0 +1,63 @@
+{
+  "payload": {
+    "header": {
+      "channel_header": {
+        "channel_id": "secdt-channel",
+        "type": 2
+      }
+    },
+    "data": {
+      "config_update": {
+        "channel_id": "secdt-channel",
+        "isolated_data": {},
+        "read_set": {
+          "groups": {
+            "Orderer": {
+              "groups": {},
+              "mod_policy": "",
+              "policies": {},
+              "values": {},
+              "version": "0"
+            }
+          },
+          "mod_policy": "",
+          "policies": {},
+          "values": {},
+          "version": "0"
+        },
+        "write_set": {
+          "groups": {
+            "Orderer": {
+              "groups": {},
+              "mod_policy": "",
+              "policies": {},
+              "values": {
+                "BatchSize": {
+                  "mod_policy": "Admins",
+                  "value": {
+                    "absolute_max_bytes": 103809024,
+                    "max_message_count": 10000,
+                    "preferred_max_bytes": 50331648
+                  },
+                  "version": "1"
+                },
+                "BatchTimeout": {
+                  "mod_policy": "Admins",
+                  "value": {
+                    "timeout": "500ms"
+                  },
+                  "version": "1"
+                }
+              },
+              "version": "0"
+            }
+          },
+          "mod_policy": "",
+          "policies": {},
+          "values": {},
+          "version": "0"
+        }
+      }
+    }
+  }
+}

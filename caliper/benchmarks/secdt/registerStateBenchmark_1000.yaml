@@ -1,0 +1,17 @@
+test:
+  name: secdt-registerstate-benchmark-1000
+  description: Benchmark Caliper 1000 TPS sur un peer gateway
+  workers:
+    type: local
+    number: 4
+
+  rounds:
+    - label: registerstate-rate-1000
+      description: RegisterState avec 1000 TPS
+      txNumber: 6000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1000
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js

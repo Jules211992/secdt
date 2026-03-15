@@ -1,0 +1,17 @@
+test:
+  name: secdt-registerstate-benchmark-singlevm-2000
+  description: Benchmark Caliper 2000 TPS sur une VM dédiée
+  workers:
+    type: local
+    number: 8
+
+  rounds:
+    - label: registerstate-rate-2000
+      description: RegisterState avec 2000 TPS
+      txNumber: 24000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 2000
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js

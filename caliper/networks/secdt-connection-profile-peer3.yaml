@@ -1,0 +1,24 @@
+name: secdt-network-peer3
+version: 1.0.0
+
+client:
+  organization: PeerMSP
+  connection:
+    timeout:
+      peer:
+        endorser: 300
+
+organizations:
+  PeerMSP:
+    mspid: PeerMSP
+    peers:
+      - peer-fabric-3
+
+peers:
+  peer-fabric-3:
+    url: grpcs://peer-fabric-3:7051
+    tlsCACerts:
+      path: /home/ubuntu/secdt-fabric/crypto-config/peerOrganizations/secdt.com/peers/peer-fabric-3.secdt.com/tls/ca.crt
+    grpcOptions:
+      ssl-target-name-override: peer-fabric-3
+      hostnameOverride: peer-fabric-3

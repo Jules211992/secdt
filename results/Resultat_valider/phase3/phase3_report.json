@@ -1,0 +1,16 @@
+{
+  "run_id": "phase3_20260314T162103Z",
+  "machine_id": "machine-003",
+  "cid": "QmaQQfVUJ15hSrhKQ2jn7fF23RjBz8JXfz63RVSz83vK9A",
+  "hash": "fecbcbdec5e8e2f43d6444b4e1513c1e088dbb3e2d9f1735f74b520ddf716a8f",
+  "verify_integrity": "false",
+  "history": [{"machine_id":"machine-003","timestamp":"2026-03-14T16:20:02Z","cid":"QmTest","health_score":93.7,"cycle":240,"session_id":"session-test","hash":"hash-test","tx_id":"e6b54810d5a76122ed1da42e9f4a20cf8bdb8e2003b109cfa713efd0cca43589"},{"machine_id":"machine-003","timestamp":"2026-03-14T05:28:46Z","cid":"QmaQQfVUJ15hSrhKQ2jn7fF23RjBz8JXfz63RVSz83vK9A","health_score":93.7,"cycle":240,"session_id":"session-003","hash":"fecbcbdec5e8e2f43d6444b4e1513c1e088dbb3e2d9f1735f74b520ddf716a8f","tx_id":"c3a2ca58daef659b55d9ef3c46908f2b52a8a76ee10d56210eb8538036ab4c11"}],
+  "timing_ms": {
+    "snapshot_hash": 9.995,
+    "ipfs_add_cid": 86.919,
+    "ipfs_cat_check": 10.122,
+    "fabric_submit_commit": 91.687,
+    "fabric_query": 146.880,
+    "end_to_end_total": 345.606
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "system": "secdt_full",
+  "run_index": 9,
+  "machine_id": "machine-0001-secdt-phase7_s4_20260314T212954Z-r9",
+  "success": true,
+  "verify_ok": true,
+  "timing_ms": {
+    "ipfs_phase": 83,
+    "fabric_phase": 814,
+    "audit_phase": 2,
+    "end_to_end_total": 899
+  },
+  "storage_bytes": {
+    "on_chain": 215,
+    "off_chain": 431,
+    "database_total": 0
+  },
+  "auditability": {
+    "history_reconstructable": true,
+    "history_length": 1,
+    "cid_hash_consistent": true,
+    "integrity_proof_strength": "high"
+  }
+}

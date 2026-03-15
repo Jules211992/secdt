@@ -1,0 +1,48 @@
+version: '2.4'
+
+services:
+  peer:
+    container_name: secdt-fabric_peer_1
+    image: hyperledger/fabric-peer:2.5
+    environment:
+      - FABRIC_LOGGING_SPEC=INFO
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=secdt-fabric_secdt-net
+      - CORE_PEER_ID=${PEER_HOSTNAME}
+      - CORE_PEER_LOCALMSPID=PeerMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
+      - CORE_PEER_ADDRESS=${PEER_HOSTNAME}:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=${PEER_HOSTNAME}:7051
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
+      - CORE_PEER_CHAINCODEADDRESS=peer:7052
+      - CORE_CHAINCODE_EXECUTETIMEOUT=300s
+      - CORE_OPERATIONS_LISTENADDRESS=0.0.0.0:9444
+      - CORE_METRICS_PROVIDER=disabled
+      - CORE_PEER_LIMITS_CONCURRENCY_ENDORSERSERVICE=2500
+      - CORE_PEER_LIMITS_CONCURRENCY_DELIVERSERVICE=2500
+      - CORE_PEER_LIMITS_CONCURRENCY_GATEWAYSERVICE=2000
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: peer node start
+    volumes:
+      - /var/run:/host/var/run
+      - ./crypto-config/peerOrganizations/secdt.com/peers/${PEER_HOSTNAME}.secdt.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto-config/peerOrganizations/secdt.com/peers/${PEER_HOSTNAME}.secdt.com/tls:/etc/hyperledger/fabric/tls
+      - secdt-fabric_peer-data:/var/hyperledger/production
+    ports:
+      - 7051:7051
+      - 7052:7052
+    networks:
+      - secdt-net
+    restart: unless-stopped
+
+volumes:
+  secdt-fabric_peer-data:
+
+networks:
+  secdt-net:
+    name: secdt-fabric_secdt-net

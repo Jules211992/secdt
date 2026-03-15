@@ -1,0 +1,16 @@
+{
+  "scenario": "S3-B",
+  "name": "replay_stale_snapshot",
+  "machine_id": "machine-replay-20260314T204859Z",
+  "history_length": 2,
+  "cycles_in_history": [
+    1,
+    2
+  ],
+  "head_cycle": 1,
+  "max_cycle_seen": 2,
+  "replay_detected": true,
+  "newer_invoke_ok": true,
+  "older_replay_invoke_ok": true,
+  "success": true
+}

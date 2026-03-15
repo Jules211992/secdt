@@ -1,0 +1,5 @@
+case,n_runs,success_rate,latency_mean_ms,cpu_busy_mean_pct,mem_delta_mean_mb,network_total_bytes_sum,data_manipulated_bytes_sum,on_chain_bytes,off_chain_bytes
+case_a_local_only,20,1.0,11.3,12.778,0.325,7760,18616,0,0
+case_b_ipfs_only,20,1.0,106.1,10.281,-0.046,142994,19116,0,8618
+case_c_fabric_only,20,1.0,796.9,6.042,-6.906,4373267,23448,3672,0
+case_d_ipfs_fabric,20,1.0,890.2,6.204,-6.34,4608096,34726,4372,8698

@@ -1,0 +1,41 @@
+{
+  "case": "case_c_fabric_only",
+  "n_runs": 20,
+  "success_rate": 1.0,
+  "latency_ms": {
+    "mean": 796.9,
+    "median": 797.5,
+    "p95": 805.35,
+    "p99": 810.67
+  },
+  "cpu_busy_pct": {
+    "mean": 6.042,
+    "median": 5.941,
+    "p95": 6.93,
+    "p99": 6.956
+  },
+  "mem_delta_mb": {
+    "mean": -6.906,
+    "median": -5.875,
+    "p95": 2.233,
+    "p99": 4.175
+  },
+  "network_total_bytes": {
+    "mean": 218663.35,
+    "median": 219097.0,
+    "p95": 232320.7,
+    "p99": 232574.54,
+    "sum": 4373267
+  },
+  "data_manipulated_bytes": {
+    "mean": 1172.4,
+    "median": 1174.0,
+    "p95": 1177.0,
+    "p99": 1177.0,
+    "sum": 23448
+  },
+  "storage_bytes": {
+    "on_chain": 3672,
+    "off_chain": 0
+  }
+}

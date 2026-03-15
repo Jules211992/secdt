@@ -1,0 +1,218 @@
+{
+  "phase": "phase8_s5",
+  "runset_id": "phase8_s5_20260314T214916Z",
+  "n_runs_per_case": 20,
+  "emission_interval_ms": 500,
+  "baseline_case": "case_a_local_only",
+  "phase7_postgresql_reference": "/home/ubuntu/secdt-phase7/resultats_phase7/phase7_s4_20260314T212954Z/phase7_s4_summary.json",
+  "cases": [
+    {
+      "case": "case_a_local_only",
+      "n_runs": 20,
+      "success_rate": 1.0,
+      "latency_ms": {
+        "mean": 11.3,
+        "median": 11.0,
+        "p95": 13.05,
+        "p99": 13.81
+      },
+      "cpu_busy_pct": {
+        "mean": 12.778,
+        "median": 12.829,
+        "p95": 14.782,
+        "p99": 15.929
+      },
+      "mem_delta_mb": {
+        "mean": 0.325,
+        "median": 0.457,
+        "p95": 0.492,
+        "p99": 0.492
+      },
+      "network_total_bytes": {
+        "mean": 388,
+        "median": 0.0,
+        "p95": 2956.2,
+        "p99": 4205.64,
+        "sum": 7760
+      },
+      "data_manipulated_bytes": {
+        "mean": 930.8,
+        "median": 931.0,
+        "p95": 937.0,
+        "p99": 937.0,
+        "sum": 18616
+      },
+      "storage_bytes": {
+        "on_chain": 0,
+        "off_chain": 0
+      },
+      "relative_overhead_vs_case_a": {
+        "latency_ratio": 1.0,
+        "cpu_ratio": 1.0,
+        "mem_ratio": 1.0,
+        "network_ratio": 1.0,
+        "data_ratio": 1.0
+      },
+      "relative_vs_phase7_postgresql": {
+        "latency_ratio": 0.0658,
+        "storage_ratio_per_run": 1.177
+      }
+    },
+    {
+      "case": "case_b_ipfs_only",
+      "n_runs": 20,
+      "success_rate": 1.0,
+      "latency_ms": {
+        "mean": 106.1,
+        "median": 105.5,
+        "p95": 114.05,
+        "p99": 114.81
+      },
+      "cpu_busy_pct": {
+        "mean": 10.281,
+        "median": 10.378,
+        "p95": 11.207,
+        "p99": 11.213
+      },
+      "mem_delta_mb": {
+        "mean": -0.046,
+        "median": 0.319,
+        "p95": 0.751,
+        "p99": 1.122
+      },
+      "network_total_bytes": {
+        "mean": 7149.7,
+        "median": 4157.0,
+        "p95": 17215.55,
+        "p99": 17467.11,
+        "sum": 142994
+      },
+      "data_manipulated_bytes": {
+        "mean": 955.8,
+        "median": 956.0,
+        "p95": 962.0,
+        "p99": 962.0,
+        "sum": 19116
+      },
+      "storage_bytes": {
+        "on_chain": 0,
+        "off_chain": 8618
+      },
+      "relative_overhead_vs_case_a": {
+        "latency_ratio": 9.3894,
+        "cpu_ratio": 0.8046,
+        "mem_ratio": -0.1415,
+        "network_ratio": 18.4271,
+        "data_ratio": 1.0269
+      },
+      "relative_vs_phase7_postgresql": {
+        "latency_ratio": 0.6179,
+        "storage_ratio_per_run": 1.2086
+      }
+    },
+    {
+      "case": "case_c_fabric_only",
+      "n_runs": 20,
+      "success_rate": 1.0,
+      "latency_ms": {
+        "mean": 796.9,
+        "median": 797.5,
+        "p95": 805.35,
+        "p99": 810.67
+      },
+      "cpu_busy_pct": {
+        "mean": 6.042,
+        "median": 5.941,
+        "p95": 6.93,
+        "p99": 6.956
+      },
+      "mem_delta_mb": {
+        "mean": -6.906,
+        "median": -5.875,
+        "p95": 2.233,
+        "p99": 4.175
+      },
+      "network_total_bytes": {
+        "mean": 218663.35,
+        "median": 219097.0,
+        "p95": 232320.7,
+        "p99": 232574.54,
+        "sum": 4373267
+      },
+      "data_manipulated_bytes": {
+        "mean": 1172.4,
+        "median": 1174.0,
+        "p95": 1177.0,
+        "p99": 1177.0,
+        "sum": 23448
+      },
+      "storage_bytes": {
+        "on_chain": 3672,
+        "off_chain": 0
+      },
+      "relative_overhead_vs_case_a": {
+        "latency_ratio": 70.5221,
+        "cpu_ratio": 0.4728,
+        "mem_ratio": -21.2492,
+        "network_ratio": 563.5653,
+        "data_ratio": 1.2596
+      },
+      "relative_vs_phase7_postgresql": {
+        "latency_ratio": 4.6412,
+        "storage_ratio_per_run": 1.4825
+      }
+    },
+    {
+      "case": "case_d_ipfs_fabric",
+      "n_runs": 20,
+      "success_rate": 1.0,
+      "latency_ms": {
+        "mean": 890.2,
+        "median": 890.0,
+        "p95": 910.25,
+        "p99": 914.05
+      },
+      "cpu_busy_pct": {
+        "mean": 6.204,
+        "median": 6.224,
+        "p95": 6.77,
+        "p99": 6.831
+      },
+      "mem_delta_mb": {
+        "mean": -6.34,
+        "median": -6.269,
+        "p95": 2.489,
+        "p99": 5.77
+      },
+      "network_total_bytes": {
+        "mean": 230404.8,
+        "median": 231679.5,
+        "p95": 245447.75,
+        "p99": 245656.75,
+        "sum": 4608096
+      },
+      "data_manipulated_bytes": {
+        "mean": 1736.3,
+        "median": 1738.0,
+        "p95": 1744.0,
+        "p99": 1744.0,
+        "sum": 34726
+      },
+      "storage_bytes": {
+        "on_chain": 4372,
+        "off_chain": 8698
+      },
+      "relative_overhead_vs_case_a": {
+        "latency_ratio": 78.7788,
+        "cpu_ratio": 0.4855,
+        "mem_ratio": -19.5077,
+        "network_ratio": 593.8268,
+        "data_ratio": 1.8654
+      },
+      "relative_vs_phase7_postgresql": {
+        "latency_ratio": 5.1846,
+        "storage_ratio_per_run": 2.1956
+      }
+    }
+  ]
+}

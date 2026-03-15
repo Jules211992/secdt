@@ -1,0 +1,4 @@
+target_tps_per_vm,n_orgs,total_target_tps,peer1_throughput_tps,peer2_throughput_tps,peer3_throughput_tps,aggregated_throughput_tps,mean_peer_avg_latency_s,max_peer_latency_s,total_successful_transactions,total_failed_transactions
+1000,3,3000,633.7,665.1,648.3,1947.1,0.9267,1.66,36000,0
+1500,3,4500,678.7,677.3,698.7,2054.7,0.97,1.95,54000,0
+2000,3,6000,689.2,699.9,696.2,2085.3,1.03,2.49,72000,0

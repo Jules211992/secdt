@@ -1,0 +1,21 @@
+{
+  "system": "postgresql_centralized",
+  "n_runs": 20,
+  "success_rate": 1.0,
+  "throughput_rps": 1.091,
+  "latency_ms": {
+    "mean": 171.7,
+    "median": 169.0,
+    "p95": 186.55,
+    "p99": 194.91
+  },
+  "storage_bytes": {
+    "on_chain": 0,
+    "off_chain": 0,
+    "database_total": 15816
+  },
+  "auditability": {
+    "history_reconstructable": true,
+    "integrity_proof_strength": "low"
+  }
+}

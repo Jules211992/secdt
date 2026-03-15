@@ -1,0 +1,210 @@
+{
+  "run_index": 1,
+  "machine_id": "machine-s1-20260314T172001Z-001",
+  "cid": "QmPQbpLQ4cKG3nKX83euzc8ekvpyv99c4iA7F2jYNSNNdA",
+  "hash": "618450c2be314b77f9308c560fc7faa0cd747ffce813d1e0c54a339f80b19a86",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 9,
+    "ipfs_add_cid": 80,
+    "ipfs_cat_check": 18,
+    "fabric_submit_commit": 656,
+    "fabric_query_phase": 142,
+    "end_to_end_total": 905
+  }
+}
+{
+  "run_index": 2,
+  "machine_id": "machine-s1-20260314T172001Z-002",
+  "cid": "QmPpuL945NFLHRZwSJVtdQAihoj3AFit2rE613gxoPvrxY",
+  "hash": "91f33122baa1ca85079db2aa71a8f86855e5d995401fdaec1eab54d69e1f0efa",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 9,
+    "ipfs_add_cid": 75,
+    "ipfs_cat_check": 10,
+    "fabric_submit_commit": 658,
+    "fabric_query_phase": 147,
+    "end_to_end_total": 899
+  }
+}
+{
+  "run_index": 3,
+  "machine_id": "machine-s1-20260314T172001Z-003",
+  "cid": "QmTqYYWGLdZcAVehbYw8SjtaSbe3aAdeJc7XCkVEVXQpTE",
+  "hash": "c9b2de676b1fe6ae61ba753dd9b1739ea59c2fe44170547eb447f383e71d3515",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 10,
+    "ipfs_add_cid": 80,
+    "ipfs_cat_check": 10,
+    "fabric_submit_commit": 657,
+    "fabric_query_phase": 148,
+    "end_to_end_total": 905
+  }
+}
+{
+  "run_index": 4,
+  "machine_id": "machine-s1-20260314T172001Z-004",
+  "cid": "Qmag2L7HkLxU9HtwembcWJT5ZbRrkgwi7HAW8X2eMhAayz",
+  "hash": "fe4c4287c286efb31fb38e96fdd02ec48db0d84947ecb1f4ba7e7883b409ebc0",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 9,
+    "ipfs_add_cid": 76,
+    "ipfs_cat_check": 18,
+    "fabric_submit_commit": 654,
+    "fabric_query_phase": 145,
+    "end_to_end_total": 902
+  }
+}
+{
+  "run_index": 5,
+  "machine_id": "machine-s1-20260314T172001Z-005",
+  "cid": "QmUBLUvWoKASy2qk7QNAZSUsKqUywHPYEq3C6HbBUUzqSG",
+  "hash": "c4e3ea7c392961b810f93ac659be4ea9748c96c4f6554ac14e7f6b202de0d993",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 10,
+    "ipfs_add_cid": 83,
+    "ipfs_cat_check": 18,
+    "fabric_submit_commit": 654,
+    "fabric_query_phase": 151,
+    "end_to_end_total": 916
+  }
+}
+{
+  "run_index": 6,
+  "machine_id": "machine-s1-20260314T172001Z-006",
+  "cid": "QmTX1eiS85JfMgBDJFsFm3vtAC9cJdEcvLMBS72yTN4H1h",
+  "hash": "50c43d18f2fad993a3cba4f387c27717e0aab8691a1a89bd713d4eb444fecde2",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 10,
+    "ipfs_add_cid": 90,
+    "ipfs_cat_check": 12,
+    "fabric_submit_commit": 672,
+    "fabric_query_phase": 151,
+    "end_to_end_total": 935
+  }
+}
+{
+  "run_index": 7,
+  "machine_id": "machine-s1-20260314T172001Z-007",
+  "cid": "QmbSfHc93sU3JYqCjjVHhKh3SRvJpTCoNdppfkCpJi43h9",
+  "hash": "ecf6ae50f81a46e6f1456c4b1aa5b3905e0d3bd2f29651504ccd0f6d4ab2e41c",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 10,
+    "ipfs_add_cid": 84,
+    "ipfs_cat_check": 20,
+    "fabric_submit_commit": 665,
+    "fabric_query_phase": 151,
+    "end_to_end_total": 930
+  }
+}
+{
+  "run_index": 8,
+  "machine_id": "machine-s1-20260314T172001Z-008",
+  "cid": "QmTzgGKZF21N8Ci4dNTKKTKTR2AbxX5GBVbPLeyLdDueVU",
+  "hash": "18a2d4fca48ddf15de78d175e7f1a8664cf0f2d4e0f759b3695859bd3431d083",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 10,
+    "ipfs_add_cid": 82,
+    "ipfs_cat_check": 12,
+    "fabric_submit_commit": 661,
+    "fabric_query_phase": 146,
+    "end_to_end_total": 911
+  }
+}
+{
+  "run_index": 9,
+  "machine_id": "machine-s1-20260314T172001Z-009",
+  "cid": "QmZPtULwkx7KFUkZszpbYjXuqk7bdT3q6ZmxKGgKAKbN64",
+  "hash": "c5c03b943f72144f58e1d2b5057faa16e0de68702c4a0c330d8c1b4510cb6168",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 11,
+    "ipfs_add_cid": 83,
+    "ipfs_cat_check": 11,
+    "fabric_submit_commit": 659,
+    "fabric_query_phase": 147,
+    "end_to_end_total": 911
+  }
+}
+{
+  "run_index": 10,
+  "machine_id": "machine-s1-20260314T172001Z-010",
+  "cid": "QmVKpNJgHSnPhoAJBnEHoxGjVycLwNayjKExuTGAvMBpcm",
+  "hash": "d11d2929f5d1886b7145dd206de8e7abbdb8b069a27c08aa2b54fbed8bf9a082",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "history_length": 1,
+  "cid_matches_history": true,
+  "hash_matches_history": true,
+  "success_end_to_end": true,
+  "timing_ms": {
+    "snapshot_hash": 9,
+    "ipfs_add_cid": 76,
+    "ipfs_cat_check": 17,
+    "fabric_submit_commit": 678,
+    "fabric_query_phase": 159,
+    "end_to_end_total": 939
+  }
+}

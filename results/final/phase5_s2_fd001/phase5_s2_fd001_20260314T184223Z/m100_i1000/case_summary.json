@@ -1,0 +1,29 @@
+{
+  "phase": "phase5_s2_fd001",
+  "machine_count": 100,
+  "interval_ms": 1000,
+  "n_runs": 100,
+  "success_rate": 0.01,
+  "throughput_rps": 1.083,
+  "network_cost_bytes": 76430,
+  "latency_ms": {
+    "end_to_end": {
+      "mean": 923.19,
+      "median": 922.0,
+      "p95": 946.05,
+      "p99": 952.18
+    },
+    "ipfs_total": {
+      "mean": 97.6,
+      "median": 97.5,
+      "p95": 106.05,
+      "p99": 108.01
+    },
+    "fabric_commit": {
+      "mean": 661.38,
+      "median": 661.0,
+      "p95": 672.0,
+      "p99": 679.18
+    }
+  }
+}

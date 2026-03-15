@@ -1,0 +1,19 @@
+{
+  "machine_id": "machine-replay-20260314T204859Z",
+  "session_id": "session-replay-20260314T204859Z",
+  "health_score": 100.0,
+  "cycle": 1,
+  "hash": "f59252a99edfbef55e26fe9f3d2a9e349ba1c6c3c71e5a048c669ce9094bc79f",
+  "cid": "QmfCPRcDSZj4njWw7bSmBc8QTeHbk1BkB3X2tnevQyxjog",
+  "invoke_ok": true,
+  "verify_ok": true,
+  "history_ok": true,
+  "timing_ms": {
+    "snapshot_hash": 9,
+    "ipfs_add_cid": 87,
+    "ipfs_cat_check": 17,
+    "fabric_submit_commit": 650,
+    "fabric_query_phase": 137,
+    "end_to_end_total": 900
+  }
+}

@@ -1,0 +1,8 @@
+*.log
+__pycache__/
+*.pyc
+venv/
+*.aux
+*.bbl
+*.blg
+*.synctex.gz

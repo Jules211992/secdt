@@ -1,0 +1,13 @@
+{
+  "phase": "phase6_s3",
+  "runset_id": "phase6_s3_20260314T204859Z",
+  "snapshot_jsonl": "/home/ubuntu/secdt-data/prepared/fd001_snapshots.jsonl",
+  "spec_file": "/home/ubuntu/secdt-data/spec/dataset_fixed_spec.json",
+  "scenarios": [
+    "s3a_tampering_before_anchoring",
+    "s3b_replay_stale_snapshot",
+    "s3c_unauthorized_registration",
+    "s3d_audit_reconstruction"
+  ],
+  "status": "initialized"
+}

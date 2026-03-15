@@ -1,0 +1,2 @@
+[34m2026-03-14 18:42:35.652 UTC 0001 INFO[0m [chaincodeCmd] [34;1mClientWait[0m -> txid [568daf7967b29b8a808ec1aad10495d834780d8c0e044357d23cfe7ea4212710] committed with status (VALID) at peer-fabric-1:7051
+[34m2026-03-14 18:42:35.653 UTC 0002 INFO[0m [chaincodeCmd] [34;1mchaincodeInvokeOrQuery[0m -> Chaincode invoke successful. result: status:200 

@@ -1,0 +1,24 @@
+{
+  "root_validated_results": "/home/ubuntu/secdt-results/Resultat_valider",
+  "output_dir": "/home/ubuntu/secdt-results/article_assets",
+  "article_result_figures_only": true,
+  "phase3_present_but_not_used_in_current_article_plan": "/home/ubuntu/secdt-results/Resultat_valider/phase3/phase3_report.json",
+  "figures": [
+    "/home/ubuntu/secdt-results/article_assets/figures/fig_01_phase2_caliper_distributed.png",
+    "/home/ubuntu/secdt-results/article_assets/figures/fig_02_phase4_nominal_latency.png",
+    "/home/ubuntu/secdt-results/article_assets/figures/fig_03_phase5_scalability.png",
+    "/home/ubuntu/secdt-results/article_assets/figures/fig_04_phase7_baselines.png",
+    "/home/ubuntu/secdt-results/article_assets/figures/fig_05_phase8_storage_network.png",
+    "/home/ubuntu/secdt-results/article_assets/figures/fig_06_phase9_partial_failure.png",
+    "/home/ubuntu/secdt-results/article_assets/figures/fig_07_phase10_ipfs_filesize.png"
+  ],
+  "tables": [
+    "/home/ubuntu/secdt-results/article_assets/tables/table_01_phase2_caliper_distributed.csv",
+    "/home/ubuntu/secdt-results/article_assets/tables/table_02_phase4_nominal_latency.csv",
+    "/home/ubuntu/secdt-results/article_assets/tables/table_03_phase5_scalability.csv",
+    "/home/ubuntu/secdt-results/article_assets/tables/table_04_phase7_baseline_comparison.csv",
+    "/home/ubuntu/secdt-results/article_assets/tables/table_05_phase8_storage_overhead.csv",
+    "/home/ubuntu/secdt-results/article_assets/tables/table_06_phase6_phase9_security_resilience.csv",
+    "/home/ubuntu/secdt-results/article_assets/tables/table_07_phase10_ipfs_file_size.csv"
+  ]
+}

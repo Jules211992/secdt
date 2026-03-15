@@ -1,0 +1,17 @@
+version: '2.4'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=secdt_baseline
+      - POSTGRES_USER=secdt
+      - POSTGRES_PASSWORD=secdt2026
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+
+volumes:
+  postgres-data:

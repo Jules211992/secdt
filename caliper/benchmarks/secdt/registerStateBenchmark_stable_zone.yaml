@@ -1,0 +1,67 @@
+test:
+  name: secdt-registerstate-stable-zone
+  description: Benchmark Caliper pour identifier la zone stable de RegisterState sur SecDT
+  workers:
+    type: local
+    number: 8
+
+  rounds:
+    - label: registerstate-rate-600
+      description: RegisterState avec 600 TPS
+      txNumber: 3600
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 600
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-800
+      description: RegisterState avec 800 TPS
+      txNumber: 4800
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 800
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-1000
+      description: RegisterState avec 1000 TPS
+      txNumber: 6000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1000
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-1100
+      description: RegisterState avec 1100 TPS
+      txNumber: 6600
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1100
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-1200
+      description: RegisterState avec 1200 TPS
+      txNumber: 7200
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1200
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js
+
+    - label: registerstate-rate-1400
+      description: RegisterState avec 1400 TPS
+      txNumber: 8400
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1400
+      workload:
+        module: /home/ubuntu/secdt-caliper-benchmark/benchmarks/secdt/workloads/registerState.js

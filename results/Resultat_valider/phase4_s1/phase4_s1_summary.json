@@ -1,0 +1,27 @@
+{
+  "phase": "phase4_s1_nominal",
+  "runset_id": "phase4_s1_20260314T172001Z",
+  "n_runs": 10,
+  "success_rate": 1.0,
+  "emission_interval_ms": 1000,
+  "latency_ms": {
+    "end_to_end": {
+      "mean": 915.3,
+      "median": 911.0,
+      "p95": 937.2,
+      "p99": 938.64
+    },
+    "ipfs_total": {
+      "mean": 95.5,
+      "median": 94.0,
+      "p95": 103.1,
+      "p99": 103.82
+    },
+    "fabric_commit": {
+      "mean": 661.4,
+      "median": 658.5,
+      "p95": 675.3,
+      "p99": 677.46
+    }
+  }
+}

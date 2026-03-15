@@ -1,0 +1,41 @@
+{
+  "case": "case_a_local_only",
+  "n_runs": 20,
+  "success_rate": 1.0,
+  "latency_ms": {
+    "mean": 11.3,
+    "median": 11.0,
+    "p95": 13.05,
+    "p99": 13.81
+  },
+  "cpu_busy_pct": {
+    "mean": 12.778,
+    "median": 12.829,
+    "p95": 14.782,
+    "p99": 15.929
+  },
+  "mem_delta_mb": {
+    "mean": 0.325,
+    "median": 0.457,
+    "p95": 0.492,
+    "p99": 0.492
+  },
+  "network_total_bytes": {
+    "mean": 388,
+    "median": 0.0,
+    "p95": 2956.2,
+    "p99": 4205.64,
+    "sum": 7760
+  },
+  "data_manipulated_bytes": {
+    "mean": 930.8,
+    "median": 931.0,
+    "p95": 937.0,
+    "p99": 937.0,
+    "sum": 18616
+  },
+  "storage_bytes": {
+    "on_chain": 0,
+    "off_chain": 0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "phase": "phase7_s4",
+  "runset_id": "phase7_s4_20260314T212954Z",
+  "n_runs_per_system": 20,
+  "emission_interval_ms": 500,
+  "systems": [
+    {
+      "system": "postgresql_centralized",
+      "n_runs": 20,
+      "success_rate": 1.0,
+      "throughput_rps": 1.091,
+      "latency_ms": {
+        "mean": 171.7,
+        "median": 169.0,
+        "p95": 186.55,
+        "p99": 194.91
+      },
+      "storage_bytes": {
+        "on_chain": 0,
+        "off_chain": 0,
+        "database_total": 15816
+      },
+      "auditability": {
+        "history_reconstructable": true,
+        "integrity_proof_strength": "low"
+      }
+    },
+    {
+      "system": "fabric_only",
+      "n_runs": 20,
+      "success_rate": 1.0,
+      "throughput_rps": 0.648,
+      "latency_ms": {
+        "mean": 805.55,
+        "median": 803.0,
+        "p95": 824.2,
+        "p99": 827.24
+      },
+      "storage_bytes": {
+        "on_chain": 3832,
+        "off_chain": 0,
+        "database_total": 0
+      },
+      "auditability": {
+        "history_reconstructable": true,
+        "integrity_proof_strength": "medium"
+      }
+    },
+    {
+      "system": "secdt_full",
+      "n_runs": 20,
+      "success_rate": 1.0,
+      "throughput_rps": 0.61,
+      "latency_ms": {
+        "mean": 902.8,
+        "median": 899.5,
+        "p95": 925.2,
+        "p99": 928.24
+      },
+      "storage_bytes": {
+        "on_chain": 4332,
+        "off_chain": 8658,
+        "database_total": 0
+      },
+      "auditability": {
+        "history_reconstructable": true,
+        "integrity_proof_strength": "high"
+      }
+    }
+  ],
+  "best_compromise": "secdt_full",
+  "interpretation": {
+    "lowest_raw_latency": "postgresql_centralized",
+    "highest_throughput": "postgresql_centralized",
+    "strongest_auditability": "secdt_full",
+    "strongest_integrity_proof": "secdt_full"
+  }
+}

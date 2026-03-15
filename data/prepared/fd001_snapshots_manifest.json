@@ -1,0 +1,20 @@
+{
+  "dataset": "NASA CMAPSS FD001",
+  "source_csv": "/home/ubuntu/secdt-data/prepared_fd001/train_fd001.csv",
+  "spec_file": "/home/ubuntu/secdt-data/spec/dataset_fixed_spec.json",
+  "output_jsonl": "/home/ubuntu/secdt-data/prepared/fd001_snapshots.jsonl",
+  "n_snapshots": 20631,
+  "n_units": 100,
+  "selected_sensors": [
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_7",
+    "sensor_11",
+    "sensor_12",
+    "sensor_15",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "status": "snapshots_generated"
+}

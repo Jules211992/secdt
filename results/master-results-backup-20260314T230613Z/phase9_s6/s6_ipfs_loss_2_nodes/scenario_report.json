@@ -1,0 +1,12 @@
+{
+  "scenario": "s6_ipfs_loss_2_nodes",
+  "cid": "QmXhouDb9XWP9SXkWR6wsQ2v9o4zvSKkGiSY8WPAK5zyHC",
+  "expected_hash": "bada079421232f7462095936d769f47a40f8f39389865ec1b93cb9856f79a030",
+  "retrievable_after_failure": true,
+  "recovery_ms": 20,
+  "auditability_preserved": true,
+  "history_length": 1,
+  "retrieved_hash": "bada079421232f7462095936d769f47a40f8f39389865ec1b93cb9856f79a030",
+  "cid_hash_consistent": true,
+  "success": true
+}

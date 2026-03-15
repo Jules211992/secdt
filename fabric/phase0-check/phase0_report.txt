@@ -1,0 +1,771 @@
+===== PHASE 0 CHECK =====
+Sat Mar 14 11:52:29 UTC 2026
+
+===== 1. INVENTAIRE DES MACHINES =====
+--- peer-fabric-1 ---
+peer-fabric-1
+10.0.0.151 172.17.0.1 172.19.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- peer-fabric-2 ---
+peer-fabric-2
+10.0.0.62 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- peer-fabric-3 ---
+peer-fabric-3
+10.0.0.203 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- orderer-fabric-1 ---
+orderer-fabric-1
+10.0.0.160 172.17.0.1 172.18.0.1 172.19.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- orderer-fabric-2 ---
+orderer-fabric-2
+10.0.0.129 172.17.0.1 172.18.0.1 172.19.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- orderer-fabric-3 ---
+orderer-fabric-3
+10.0.0.120 172.17.0.1 172.18.0.1 172.19.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- ipfs-node-1 ---
+ipfs-node-1
+10.0.0.55 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- ipfs-node-2 ---
+ipfs-node-2
+10.0.0.168 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- ipfs-node-3 ---
+ipfs-node-3
+10.0.0.123 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- ipfs-node-4 ---
+ipfs-node-4
+10.0.0.95 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- ipfs-node-5 ---
+ipfs-node-5
+10.0.0.116 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- edge-gateway ---
+edge-gateway
+10.0.0.224 172.17.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- postgres-baseline ---
+postgres-baseline
+10.0.0.245 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+--- monitoring ---
+monitoring
+10.0.0.4 172.17.0.1 172.18.0.1 
+Linux 5.15.0-135-generic
+CHRONY=OK
+DOCKER=OK
+
+===== 2. SYNCHRONISATION TEMPORELLE =====
+--- peer-fabric-1 ---
+               Local time: Sat 2026-03-14 11:52:39 UTC
+           Universal time: Sat 2026-03-14 11:52:39 UTC
+                 RTC time: Sat 2026-03-14 11:52:39
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : A7A0BB0C (167.160.187.12)
+Stratum         : 5
+Ref time (UTC)  : Sat Mar 14 11:39:06 2026
+System time     : 0.000043542 seconds fast of NTP time
+Last offset     : +0.000097750 seconds
+RMS offset      : 0.000088417 seconds
+Frequency       : 6.588 ppm fast
+Residual freq   : +0.001 ppm
+Skew            : 0.063 ppm
+Root delay      : 0.013633667 seconds
+Root dispersion : 0.001141950 seconds
+Update interval : 1035.2 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-4.ntp4.ps5.cano>     2  10   377   911  +4550us[+4647us] +/-   45ms
+^- alphyn.canonical.com          2  10   177   27m  +3499us[+3593us] +/-   35ms
+^- prod-ntp-3.ntp4.ps5.cano>     2  10   377   202  -1080us[-1080us] +/-   38ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377    15   -974us[ -974us] +/-   43ms
+^- 23.133.168.247                4  10   377   750  +3178us[+3178us] +/-   42ms
+^* 167.160.187.12                4  10   377   817   +312us[ +410us] +/- 7000us
+^- ntp.nyy.ca                    1  10   377   982  +2222us[+2319us] +/-   23ms
+^- s216-232-132-19.bc.hsia.>     2  10   377   660   +688us[ +688us] +/-  257ms
+
+--- peer-fabric-2 ---
+               Local time: Sat 2026-03-14 11:52:43 UTC
+           Universal time: Sat 2026-03-14 11:52:43 UTC
+                 RTC time: Sat 2026-03-14 11:52:43
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 953813A3 (archer.fsck.ca)
+Stratum         : 4
+Ref time (UTC)  : Sat Mar 14 11:23:19 2026
+System time     : 0.000000011 seconds fast of NTP time
+Last offset     : +0.000092867 seconds
+RMS offset      : 0.000042863 seconds
+Frequency       : 6.949 ppm fast
+Residual freq   : +0.000 ppm
+Skew            : 0.006 ppm
+Root delay      : 0.003178810 seconds
+Root dispersion : 0.002305641 seconds
+Update interval : 1026.4 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-3.ntp1.ps5.cano>     2  10   377   970  -1451us[-1451us] +/-   41ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377   838  -2181us[-2181us] +/-   44ms
+^- alphyn.canonical.com          2  10   377   731  +4520us[+4520us] +/-   35ms
+^- prod-ntp-4.ntp1.ps5.cano>     2   9   377   483  -2668us[-2668us] +/-   40ms
+^* archer.fsck.ca                3  10   377   29m   +122us[ +214us] +/- 2754us
+^- zero.gotroot.ca               2  10   377   988   -275us[ -275us] +/-   34ms
+^- tock.lntgn.ca                 2  10   377   677    +72us[  +72us] +/- 8508us
+^- 23.133.168.245                4  10   377   863  +2938us[+2938us] +/-   42ms
+
+--- peer-fabric-3 ---
+               Local time: Sat 2026-03-14 11:52:46 UTC
+           Universal time: Sat 2026-03-14 11:52:46 UTC
+                 RTC time: Sat 2026-03-14 11:52:46
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : A7A0BB0C (167.160.187.12)
+Stratum         : 5
+Ref time (UTC)  : Sat Mar 14 11:37:10 2026
+System time     : 0.000210427 seconds fast of NTP time
+Last offset     : +0.000000929 seconds
+RMS offset      : 0.000091623 seconds
+Frequency       : 33.069 ppm fast
+Residual freq   : +0.000 ppm
+Skew            : 0.018 ppm
+Root delay      : 0.012484496 seconds
+Root dispersion : 0.001263769 seconds
+Update interval : 1034.9 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-5.ntp1.ps5.cano>     2  10   377    24  +2376us[+2376us] +/-   48ms
+^- prod-ntp-3.ntp4.ps5.cano>     2  10   377   673  -3410us[-3410us] +/-   39ms
+^- prod-ntp-4.ntp1.ps5.cano>     2  10   377  1004   +116us[ +117us] +/-   42ms
+^- alphyn.canonical.com          2  10   377  1085  +1262us[+1263us] +/-   34ms
+^- 23.133.168.247                4  10   377   940   -699us[ -698us] +/-   43ms
+^* 167.160.187.12                4  10   377   940  -1837us[-1836us] +/- 6425us
+^- ntp1.yyz.ca.hojmark.net       2  10   377   796  -3699us[-3699us] +/-   36ms
+^+ mctnnbsa45w-142-167-7-21>     1  10   377   168  +4002us[+4002us] +/-   18ms
+
+--- orderer-fabric-1 ---
+               Local time: Sat 2026-03-14 11:52:51 UTC
+           Universal time: Sat 2026-03-14 11:52:51 UTC
+                 RTC time: Sat 2026-03-14 11:52:51
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 953813A3 (archer.fsck.ca)
+Stratum         : 4
+Ref time (UTC)  : Sat Mar 14 11:48:24 2026
+System time     : 0.000018672 seconds fast of NTP time
+Last offset     : +0.000015413 seconds
+RMS offset      : 0.000024695 seconds
+Frequency       : 10.351 ppm fast
+Residual freq   : +0.000 ppm
+Skew            : 0.007 ppm
+Root delay      : 0.003212065 seconds
+Root dispersion : 0.000858182 seconds
+Update interval : 1028.6 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-3.ntp1.ps5.cano>     2  10   377   457  +1527us[+1542us] +/-   41ms
+^- alphyn.canonical.com          2  10   377   655  +4149us[+4164us] +/-   36ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377   391  +3368us[+3384us] +/-   51ms
+^- prod-ntp-4.ntp1.ps5.cano>     2  10   377   165  -2443us[-2443us] +/-   40ms
+^- s216-232-132-63.bc.hsia.>     2  10   377    41  +1861us[+1861us] +/-  267ms
+^- vps-yyz1.orleans.ddnss.de     3  10   377   771  +1488us[+1503us] +/- 8461us
+^- one.gotroot.ca                2  10   377   752  +1683us[+1698us] +/-   34ms
+^* archer.fsck.ca                3  10   377   267   +124us[ +139us] +/- 2747us
+
+--- orderer-fabric-2 ---
+               Local time: Sat 2026-03-14 11:52:51 UTC
+           Universal time: Sat 2026-03-14 11:52:51 UTC
+                 RTC time: Sat 2026-03-14 11:52:51
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 953813A3 (archer.fsck.ca)
+Stratum         : 4
+Ref time (UTC)  : Sat Mar 14 11:35:44 2026
+System time     : 0.000000004 seconds fast of NTP time
+Last offset     : -0.000039143 seconds
+RMS offset      : 0.000098019 seconds
+Frequency       : 31.541 ppm fast
+Residual freq   : -0.003 ppm
+Skew            : 0.031 ppm
+Root delay      : 0.004226380 seconds
+Root dispersion : 0.001888540 seconds
+Update interval : 1041.2 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-4.ntp4.ps5.cano>     2  10   377   513   +286us[ +286us] +/-   40ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377   341  +4519us[+4519us] +/-   49ms
+^- alphyn.canonical.com          2  10   377   144  +2867us[+2867us] +/-   34ms
+^- prod-ntp-3.ntp1.ps5.cano>     2  10   377   879   +317us[ +317us] +/-   43ms
+^- ntp.nyy.ca                    1  10   377    32  +3592us[+3592us] +/-   25ms
+^- 209-227-173-244.cpe.dist>     1  10   377   204   -422us[ -422us] +/-   10ms
+^- s216-232-132-19.bc.hsia.>     2  10   377    96   +650us[ +650us] +/-  266ms
+^* archer.fsck.ca                3  10   377  1026    -31us[  -70us] +/- 2944us
+
+--- orderer-fabric-3 ---
+               Local time: Sat 2026-03-14 11:52:52 UTC
+           Universal time: Sat 2026-03-14 11:52:52 UTC
+                 RTC time: Sat 2026-03-14 11:52:52
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 953813A3 (archer.fsck.ca)
+Stratum         : 4
+Ref time (UTC)  : Sat Mar 14 11:50:50 2026
+System time     : 0.000018162 seconds fast of NTP time
+Last offset     : +0.000018213 seconds
+RMS offset      : 0.000138715 seconds
+Frequency       : 30.364 ppm fast
+Residual freq   : +0.000 ppm
+Skew            : 0.008 ppm
+Root delay      : 0.003310684 seconds
+Root dispersion : 0.001068940 seconds
+Update interval : 3102.6 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- alphyn.canonical.com          2  10   377   721  +2879us[+2897us] +/-   34ms
+^- prod-ntp-4.ntp1.ps5.cano>     2  10   377   888  -2435us[-2418us] +/-   40ms
+^- prod-ntp-3.ntp1.ps5.cano>     2  10   377   716   +183us[ +201us] +/-   39ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377   499   -934us[ -916us] +/-   43ms
+^- time.cloudflare.com           3  10   377  1033   +105us[ +123us] +/-   16ms
+^+ ntp.netlinkify.com            2  10   377   467   -238us[ -220us] +/- 6980us
+^- time.cloudflare.com           3  10   377   961    +53us[  +70us] +/-   16ms
+^* archer.fsck.ca                3  10   377   122   +171us[ +190us] +/- 5750us
+
+--- ipfs-node-1 ---
+               Local time: Sat 2026-03-14 11:52:52 UTC
+           Universal time: Sat 2026-03-14 11:52:52 UTC
+                 RTC time: Sat 2026-03-14 11:52:52
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 8E04D54D (mail.fangfufu.co.uk)
+Stratum         : 3
+Ref time (UTC)  : Sat Mar 14 11:49:41 2026
+System time     : 0.000121253 seconds slow of NTP time
+Last offset     : +0.000003251 seconds
+RMS offset      : 0.000106464 seconds
+Frequency       : 10.218 ppm slow
+Residual freq   : -0.000 ppm
+Skew            : 0.016 ppm
+Root delay      : 0.011272786 seconds
+Root dispersion : 0.017934952 seconds
+Update interval : 1031.6 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ prod-ntp-5.ntp4.ps5.cano>     2  10   377    93   -435us[ -435us] +/-   42ms
+^+ prod-ntp-4.ntp4.ps5.cano>     2  10   377   334   +610us[ +614us] +/-   40ms
+^+ alphyn.canonical.com          2  10   377   678  +4014us[+4018us] +/-   35ms
+^+ prod-ntp-3.ntp4.ps5.cano>     2  10   377   22m   -363us[ -391us] +/-   38ms
+^- s216-232-132-63.bc.hsia.>     2  10   377   901  +1339us[+1344us] +/-  253ms
+^+ hub.coreserv.net              2  10   377   879   +853us[ +858us] +/-   27ms
+^- s216-232-132-21.bc.hsia.>     2  10   377   793  +1145us[+1150us] +/-  254ms
+^* mail.fangfufu.co.uk           2  10   377   190   +466us[ +469us] +/-   27ms
+
+--- ipfs-node-2 ---
+               Local time: Sat 2026-03-14 11:52:53 UTC
+           Universal time: Sat 2026-03-14 11:52:53 UTC
+                 RTC time: Sat 2026-03-14 11:52:53
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 36271740 (64.ip-54-39-23.net)
+Stratum         : 5
+Ref time (UTC)  : Sat Mar 14 11:38:40 2026
+System time     : 0.000003637 seconds fast of NTP time
+Last offset     : -0.000004118 seconds
+RMS offset      : 0.000027974 seconds
+Frequency       : 3.501 ppm fast
+Residual freq   : -0.000 ppm
+Skew            : 0.004 ppm
+Root delay      : 0.003506817 seconds
+Root dispersion : 0.001341763 seconds
+Update interval : 1032.6 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- alphyn.canonical.com          2  10   377    82  +3081us[+3081us] +/-   33ms
+^- prod-ntp-4.ntp1.ps5.cano>     2  10   377   342  +4454us[+4454us] +/-   44ms
+^- prod-ntp-3.ntp4.ps5.cano>     2  10   377   640    -58us[  -58us] +/-   40ms
+^- prod-ntp-5.ntp1.ps5.cano>     2  10   377   29m   -985us[ -989us] +/-   43ms
+^* 64.ip-54-39-23.net            4  10   377   852    -45us[  -49us] +/- 2685us
+^- s216-232-132-19.bc.hsia.>     2  10   277  1031   +461us[ +457us] +/-  283ms
+^- s216-232-132-63.bc.hsia.>     2  10   377   322   +541us[ +541us] +/-  262ms
+^- time.cloudflare.com           3  10   377   700   -179us[ -179us] +/-   15ms
+
+--- ipfs-node-3 ---
+               Local time: Sat 2026-03-14 11:52:53 UTC
+           Universal time: Sat 2026-03-14 11:52:53 UTC
+                 RTC time: Sat 2026-03-14 11:52:53
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 93BD887E (vps-yul1.orleans.ddnss.de)
+Stratum         : 4
+Ref time (UTC)  : Sat Mar 14 11:36:58 2026
+System time     : 0.000019945 seconds slow of NTP time
+Last offset     : -0.000000245 seconds
+RMS offset      : 0.000108708 seconds
+Frequency       : 11.307 ppm fast
+Residual freq   : -0.000 ppm
+Skew            : 0.036 ppm
+Root delay      : 0.003220620 seconds
+Root dispersion : 0.001482940 seconds
+Update interval : 1038.6 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- alphyn.canonical.com          2  10   377   29m  +3731us[+3731us] +/-   34ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377   156   -909us[ -909us] +/-   42ms
+^- prod-ntp-4.ntp4.ps5.cano>     2  10   377   27m  -1074us[-1074us] +/-   38ms
+^- prod-ntp-3.ntp1.ps5.cano>     2  10   377    11    +27us[  +27us] +/-   40ms
+^- host.ca2.h.wer.ee             2  10   377   869  +6646us[+6646us] +/-   28ms
+^* vps-yul1.orleans.ddnss.de     3  10   377   954   +243us[ +243us] +/- 2038us
+^- s216-232-132-102.bc.hsia>     1  10   377   276   +277us[ +277us] +/-  235ms
+^- s216-232-132-21.bc.hsia.>     2  10   377   163   +522us[ +522us] +/-  264ms
+
+--- ipfs-node-4 ---
+               Local time: Sat 2026-03-14 11:52:54 UTC
+           Universal time: Sat 2026-03-14 11:52:54 UTC
+                 RTC time: Sat 2026-03-14 11:52:54
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : D1E3ADF4 (209-227-173-244.cpe.distributel.net)
+Stratum         : 2
+Ref time (UTC)  : Sat Mar 14 11:40:56 2026
+System time     : 0.000047045 seconds slow of NTP time
+Last offset     : +0.000009112 seconds
+RMS offset      : 0.000186464 seconds
+Frequency       : 2.090 ppm slow
+Residual freq   : +0.000 ppm
+Skew            : 0.011 ppm
+Root delay      : 0.015329822 seconds
+Root dispersion : 0.001156345 seconds
+Update interval : 1029.8 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-5.ntp1.ps5.cano>     2  10   377   587   -455us[ -455us] +/-   44ms
+^- alphyn.canonical.com          2   9   377   652  -1165us[-1165us] +/-   31ms
+^- prod-ntp-4.ntp1.ps5.cano>     2  10   377   744   -556us[ -547us] +/-   40ms
+^- prod-ntp-3.ntp1.ps5.cano>     2  10   377   27m  -1856us[-1847us] +/-   38ms
+^- s216-232-132-63.bc.hsia.>     2  10   377   392   -262us[ -262us] +/-  261ms
+^* 209-227-173-244.cpe.dist>     1  10   377   718   +488us[ +497us] +/- 8375us
+^+ b.8bitbyte.ca                 3  10   377   217   +878us[ +878us] +/-   10ms
+^- s216-232-132-19.bc.hsia.>     2  10   377    10   +247us[ +247us] +/-  266ms
+
+--- ipfs-node-5 ---
+               Local time: Sat 2026-03-14 11:52:54 UTC
+           Universal time: Sat 2026-03-14 11:52:54 UTC
+                 RTC time: Sat 2026-03-14 11:52:54
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : 179F10C2 (ntp.netlinkify.com)
+Stratum         : 3
+Ref time (UTC)  : Sat Mar 14 11:38:09 2026
+System time     : 0.000024222 seconds slow of NTP time
+Last offset     : -0.000031273 seconds
+RMS offset      : 0.000112369 seconds
+Frequency       : 14.558 ppm fast
+Residual freq   : -0.001 ppm
+Skew            : 0.030 ppm
+Root delay      : 0.012241174 seconds
+Root dispersion : 0.001133880 seconds
+Update interval : 1032.9 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-4.ntp1.ps5.cano>     2  10   377  1017  -1054us[-1085us] +/-   38ms
+^- alphyn.canonical.com          2   9   377   954  +3087us[+3056us] +/-   34ms
+^- prod-ntp-3.ntp1.ps5.cano>     2  10   377   29m    +13us[  -15us] +/-   39ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377   594   +230us[ +230us] +/-   44ms
+^- s216-232-132-63.bc.hsia.>     2  10   377   500   +541us[ +541us] +/-  259ms
+^- s216-232-132-95.bc.hsia.>     2  10   377    10   +534us[ +534us] +/-  266ms
+^* ntp.netlinkify.com            2  10   377   884   -146us[ -177us] +/- 6349us
+^- s216-232-132-21.bc.hsia.>     2  10   377   664   +369us[ +369us] +/-  256ms
+
+--- edge-gateway ---
+               Local time: Sat 2026-03-14 11:52:55 UTC
+           Universal time: Sat 2026-03-14 11:52:55 UTC
+                 RTC time: Sat 2026-03-14 11:52:55
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : AE8E94E2 (drax.kayaks.hungrycats.org)
+Stratum         : 3
+Ref time (UTC)  : Sat Mar 14 11:49:22 2026
+System time     : 0.000087877 seconds fast of NTP time
+Last offset     : +0.000006193 seconds
+RMS offset      : 0.000062671 seconds
+Frequency       : 8.794 ppm slow
+Residual freq   : -0.000 ppm
+Skew            : 0.005 ppm
+Root delay      : 0.010190619 seconds
+Root dispersion : 0.001417455 seconds
+Update interval : 1041.2 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- prod-ntp-3.ntp4.ps5.cano>     2  10   377   81m    -44us[  +11us] +/-   40ms
+^- prod-ntp-5.ntp4.ps5.cano>     2  10   377   505  +5582us[+5588us] +/-   51ms
+^- prod-ntp-4.ntp1.ps5.cano>     2  10   377   210   -345us[ -345us] +/-   39ms
+^- alphyn.canonical.com          2  10   377   340  +2307us[+2314us] +/-   34ms
+^- 23.133.168.245                4  10   377   232  +2366us[+2372us] +/-   41ms
+^+ 209-227-173-244.cpe.dist>     1  10   377    87   +277us[ +277us] +/- 8382us
+^+ tock.lntgn.ca                 2  10   377  1139   -242us[ -235us] +/- 9118us
+^* drax.kayaks.hungrycats.o>     2  10   377   213   -275us[ -269us] +/- 6992us
+
+--- postgres-baseline ---
+               Local time: Sat 2026-03-14 11:52:55 UTC
+           Universal time: Sat 2026-03-14 11:52:55 UTC
+                 RTC time: Sat 2026-03-14 11:52:55
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : A29FC801 (time.cloudflare.com)
+Stratum         : 4
+Ref time (UTC)  : Sat Mar 14 11:43:49 2026
+System time     : 0.000017084 seconds fast of NTP time
+Last offset     : +0.000070699 seconds
+RMS offset      : 0.000219806 seconds
+Frequency       : 15.367 ppm fast
+Residual freq   : +0.000 ppm
+Skew            : 0.026 ppm
+Root delay      : 0.030329550 seconds
+Root dispersion : 0.001409992 seconds
+Update interval : 1026.5 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ alphyn.canonical.com          2  10   377    79  +2831us[+2831us] +/-   37ms
+^+ prod-ntp-3.ntp1.ps5.cano>     2   9   377   372  -1385us[-1385us] +/-   39ms
+^+ prod-ntp-5.ntp1.ps5.cano>     2  10   377   298  -1237us[-1237us] +/-   43ms
+^+ prod-ntp-4.ntp4.ps5.cano>     2  10   377   30m  +1114us[+1422us] +/-   41ms
+^+ 23.133.168.245                4  10   377   755  +4092us[+4162us] +/-   43ms
+^+ host.ca2.h.wer.ee             2  10   377   438  +6633us[+6633us] +/-   30ms
+^+ 23.133.168.246                4  10   377   273  +2852us[+2852us] +/-   42ms
+^* time.cloudflare.com           3  10   377   547   -154us[  -84us] +/-   16ms
+
+--- monitoring ---
+               Local time: Sat 2026-03-14 11:52:57 UTC
+           Universal time: Sat 2026-03-14 11:52:57 UTC
+                 RTC time: Sat 2026-03-14 11:52:57
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+
+Reference ID    : A29FC87B (time.cloudflare.com)
+Stratum         : 4
+Ref time (UTC)  : Sat Mar 14 11:40:59 2026
+System time     : 0.000235396 seconds fast of NTP time
+Last offset     : +0.000393251 seconds
+RMS offset      : 0.000231250 seconds
+Frequency       : 5.045 ppm slow
+Residual freq   : +0.000 ppm
+Skew            : 0.008 ppm
+Root delay      : 0.029463844 seconds
+Root dispersion : 0.001617937 seconds
+Update interval : 1043.8 seconds
+Leap status     : Normal
+
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^+ prod-ntp-3.ntp4.ps5.cano>     2  10   377   960  +5306us[+5698us] +/-   45ms
+^+ alphyn.canonical.com          2   8   377   108  +5759us[+5759us] +/-   36ms
+^+ prod-ntp-4.ntp4.ps5.cano>     2  10   377  1164   -449us[  -57us] +/-   38ms
+^+ prod-ntp-5.ntp4.ps5.cano>     2  10   377   320  +6939us[+6939us] +/-   50ms
+^+ modemcable208.184-179-17>     2  10   377    59   +883us[ +883us] +/-   44ms
+^- s216-232-132-63.bc.hsia.>     2  10   377   276  +2630us[+2630us] +/-  264ms
+^- s216-232-132-102.bc.hsia>     1  10   377   408  +1214us[+1214us] +/-  236ms
+^* time.cloudflare.com           3  10   377   717   +759us[+1152us] +/-   16ms
+
+===== 3. CONNECTIVITE INTER-VM =====
+--- SOURCE: edge-gateway ---
+edge-gateway -> peer-fabric-1 : DNS_OK
+edge-gateway -> peer-fabric-2 : DNS_OK
+edge-gateway -> peer-fabric-3 : DNS_OK
+edge-gateway -> orderer-fabric-1 : DNS_OK
+edge-gateway -> orderer-fabric-2 : DNS_OK
+edge-gateway -> orderer-fabric-3 : DNS_OK
+edge-gateway -> ipfs-node-1 : DNS_OK
+edge-gateway -> ipfs-node-2 : DNS_OK
+edge-gateway -> ipfs-node-3 : DNS_OK
+edge-gateway -> ipfs-node-4 : DNS_OK
+edge-gateway -> ipfs-node-5 : DNS_OK
+edge-gateway -> edge-gateway : DNS_OK
+edge-gateway -> postgres-baseline : DNS_OK
+edge-gateway -> monitoring : DNS_OK
+
+--- SOURCE: peer-fabric-1 ---
+peer-fabric-1 -> peer-fabric-1 : DNS_OK
+peer-fabric-1 -> peer-fabric-2 : DNS_OK
+peer-fabric-1 -> peer-fabric-3 : DNS_OK
+peer-fabric-1 -> orderer-fabric-1 : DNS_OK
+peer-fabric-1 -> orderer-fabric-2 : DNS_OK
+peer-fabric-1 -> orderer-fabric-3 : DNS_OK
+peer-fabric-1 -> ipfs-node-1 : DNS_OK
+peer-fabric-1 -> ipfs-node-2 : DNS_OK
+peer-fabric-1 -> ipfs-node-3 : DNS_OK
+peer-fabric-1 -> ipfs-node-4 : DNS_OK
+peer-fabric-1 -> ipfs-node-5 : DNS_OK
+peer-fabric-1 -> edge-gateway : DNS_OK
+peer-fabric-1 -> postgres-baseline : DNS_OK
+peer-fabric-1 -> monitoring : DNS_OK
+
+--- SOURCE: monitoring ---
+monitoring -> peer-fabric-1 : DNS_OK
+monitoring -> peer-fabric-2 : DNS_OK
+monitoring -> peer-fabric-3 : DNS_OK
+monitoring -> orderer-fabric-1 : DNS_OK
+monitoring -> orderer-fabric-2 : DNS_OK
+monitoring -> orderer-fabric-3 : DNS_OK
+monitoring -> ipfs-node-1 : DNS_OK
+monitoring -> ipfs-node-2 : DNS_OK
+monitoring -> ipfs-node-3 : DNS_OK
+monitoring -> ipfs-node-4 : DNS_OK
+monitoring -> ipfs-node-5 : DNS_OK
+monitoring -> edge-gateway : DNS_OK
+monitoring -> postgres-baseline : DNS_OK
+monitoring -> monitoring : DNS_OK
+
+===== 4. PORTS MINIMAUX =====
+peer-fabric-1:7051 OK
+peer-fabric-2:7051 OK
+peer-fabric-3:7051 OK
+orderer-fabric-1:7050 OK
+orderer-fabric-2:7050 OK
+orderer-fabric-3:7050 OK
+ipfs-node-1:5001 OK
+ipfs-node-2:5001 OK
+ipfs-node-3:5001 OK
+ipfs-node-4:5001 OK
+ipfs-node-5:5001 OK
+postgres-baseline:5432 OK
+monitoring:9090 OK
+
+===== FIN PHASE 0 CHECK =====
+Rapport: /home/ubuntu/secdt-fabric/phase0-check/phase0_report.txt

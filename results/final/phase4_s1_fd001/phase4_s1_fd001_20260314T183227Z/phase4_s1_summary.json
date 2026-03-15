@@ -1,0 +1,28 @@
+{
+  "phase": "phase4_s1_fd001",
+  "runset_id": "phase4_s1_fd001_20260314T183227Z",
+  "n_runs": 10,
+  "snapshot_source": "/home/ubuntu/secdt-data/prepared/fd001_snapshots.jsonl",
+  "success_rate": 0.1,
+  "emission_interval_ms": 1000,
+  "latency_ms": {
+    "end_to_end": {
+      "mean": 909.2,
+      "median": 909.0,
+      "p95": 925.0,
+      "p99": 925.0
+    },
+    "ipfs_total": {
+      "mean": 98.1,
+      "median": 99.0,
+      "p95": 105.55,
+      "p99": 105.91
+    },
+    "fabric_commit": {
+      "mean": 656.6,
+      "median": 658.0,
+      "p95": 664.0,
+      "p99": 664.0
+    }
+  }
+}

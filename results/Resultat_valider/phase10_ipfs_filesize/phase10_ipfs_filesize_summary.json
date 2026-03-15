@@ -1,0 +1,307 @@
+{
+  "phase": "phase10_ipfs_filesize",
+  "runset_id": "phase10_ipfs_filesize_20260315T015708Z",
+  "ipfs_api": "http://ipfs-node-1:5001/api/v0",
+  "repetitions_per_size": 5,
+  "sizes_bytes": [
+    1024,
+    10240,
+    102400,
+    262144,
+    524288,
+    1048576,
+    2097152,
+    5242880,
+    10485760
+  ],
+  "cases": [
+    {
+      "file_size_bytes": 1024,
+      "file_size_label": "1KB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 40.1847,
+        "median": 40.1822,
+        "p95": 44.8412,
+        "p99": 45.0339
+      },
+      "cat_latency_ms": {
+        "mean": 2.158,
+        "median": 2.1523,
+        "p95": 2.3523,
+        "p99": 2.3584
+      },
+      "write_throughput_mbps": {
+        "mean": 0.0246,
+        "median": 0.0243,
+        "p95": 0.0283,
+        "p99": 0.0288
+      },
+      "read_throughput_mbps": {
+        "mean": 0.4552,
+        "median": 0.4537,
+        "p95": 0.5006,
+        "p99": 0.5042
+      }
+    },
+    {
+      "file_size_bytes": 10240,
+      "file_size_label": "10KB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 40.2578,
+        "median": 38.8498,
+        "p95": 47.1855,
+        "p99": 48.4288
+      },
+      "cat_latency_ms": {
+        "mean": 2.2606,
+        "median": 2.2725,
+        "p95": 2.3962,
+        "p99": 2.4049
+      },
+      "write_throughput_mbps": {
+        "mean": 0.2455,
+        "median": 0.2514,
+        "p95": 0.2705,
+        "p99": 0.2715
+      },
+      "read_throughput_mbps": {
+        "mean": 4.335,
+        "median": 4.2973,
+        "p95": 4.7251,
+        "p99": 4.8
+      }
+    },
+    {
+      "file_size_bytes": 102400,
+      "file_size_label": "100KB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 41.1609,
+        "median": 40.4368,
+        "p95": 45.2124,
+        "p99": 45.6861
+      },
+      "cat_latency_ms": {
+        "mean": 3.3284,
+        "median": 3.2967,
+        "p95": 3.8298,
+        "p99": 3.9144
+      },
+      "write_throughput_mbps": {
+        "mean": 2.3851,
+        "median": 2.415,
+        "p95": 2.6084,
+        "p99": 2.6398
+      },
+      "read_throughput_mbps": {
+        "mean": 29.6347,
+        "median": 29.6224,
+        "p95": 32.635,
+        "p99": 32.6872
+      }
+    },
+    {
+      "file_size_bytes": 262144,
+      "file_size_label": "256KB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 44.7552,
+        "median": 38.8495,
+        "p95": 60.7537,
+        "p99": 64.2335
+      },
+      "cat_latency_ms": {
+        "mean": 6.1195,
+        "median": 4.8478,
+        "p95": 10.6719,
+        "p99": 11.74
+      },
+      "write_throughput_mbps": {
+        "mean": 5.8242,
+        "median": 6.4351,
+        "p95": 6.5893,
+        "p99": 6.6157
+      },
+      "read_throughput_mbps": {
+        "mean": 48.0981,
+        "median": 51.5698,
+        "p95": 65.635,
+        "p99": 68.3177
+      }
+    },
+    {
+      "file_size_bytes": 524288,
+      "file_size_label": "512KB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 43.739,
+        "median": 43.6954,
+        "p95": 49.7269,
+        "p99": 50.4993
+      },
+      "cat_latency_ms": {
+        "mean": 10.2834,
+        "median": 6.6128,
+        "p95": 22.0449,
+        "p99": 25.05
+      },
+      "write_throughput_mbps": {
+        "mean": 11.5617,
+        "median": 11.4429,
+        "p95": 13.2899,
+        "p99": 13.5511
+      },
+      "read_throughput_mbps": {
+        "mean": 66.6819,
+        "median": 75.6109,
+        "p95": 85.6906,
+        "p99": 86.8088
+      }
+    },
+    {
+      "file_size_bytes": 1048576,
+      "file_size_label": "1MB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 46.9367,
+        "median": 47.3339,
+        "p95": 48.8375,
+        "p99": 48.917
+      },
+      "cat_latency_ms": {
+        "mean": 8.7458,
+        "median": 8.5268,
+        "p95": 10.9414,
+        "p99": 11.4123
+      },
+      "write_throughput_mbps": {
+        "mean": 21.3363,
+        "median": 21.1265,
+        "p95": 22.5097,
+        "p99": 22.6546
+      },
+      "read_throughput_mbps": {
+        "mean": 117.3847,
+        "median": 117.2773,
+        "p95": 138.8147,
+        "p99": 141.7929
+      }
+    },
+    {
+      "file_size_bytes": 2097152,
+      "file_size_label": "2MB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 58.2189,
+        "median": 55.2459,
+        "p95": 68.6099,
+        "p99": 68.8989
+      },
+      "cat_latency_ms": {
+        "mean": 11.4889,
+        "median": 11.5645,
+        "p95": 13.1183,
+        "p99": 13.2485
+      },
+      "write_throughput_mbps": {
+        "mean": 35.0415,
+        "median": 36.2018,
+        "p95": 40.1245,
+        "p99": 40.1295
+      },
+      "read_throughput_mbps": {
+        "mean": 176.3925,
+        "median": 172.9431,
+        "p95": 203.7443,
+        "p99": 206.2724
+      }
+    },
+    {
+      "file_size_bytes": 5242880,
+      "file_size_label": "5MB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 76.0667,
+        "median": 75.1042,
+        "p95": 84.0854,
+        "p99": 85.8093
+      },
+      "cat_latency_ms": {
+        "mean": 23.6322,
+        "median": 20.8554,
+        "p95": 29.9851,
+        "p99": 30.3827
+      },
+      "write_throughput_mbps": {
+        "mean": 66.0697,
+        "median": 66.5742,
+        "p95": 71.3211,
+        "p99": 72.1479
+      },
+      "read_throughput_mbps": {
+        "mean": 219.7879,
+        "median": 239.7461,
+        "p95": 266.523,
+        "p99": 270.9159
+      }
+    },
+    {
+      "file_size_bytes": 10485760,
+      "file_size_label": "10MB",
+      "n_runs": 5,
+      "add_success_rate": 1.0,
+      "retrieval_success_rate": 1.0,
+      "hash_consistency_rate": 1.0,
+      "add_latency_ms": {
+        "mean": 108.2974,
+        "median": 100.6802,
+        "p95": 137.5692,
+        "p99": 144.3258
+      },
+      "cat_latency_ms": {
+        "mean": 50.6905,
+        "median": 47.7392,
+        "p95": 73.311,
+        "p99": 76.9178
+      },
+      "write_throughput_mbps": {
+        "mean": 94.771,
+        "median": 99.3244,
+        "p95": 107.1234,
+        "p99": 108.3378
+      },
+      "read_throughput_mbps": {
+        "mean": 221.3219,
+        "median": 209.4715,
+        "p95": 338.0382,
+        "p99": 361.5977
+      }
+    }
+  ]
+}

@@ -1,0 +1,1128 @@
+{
+  "root": "/home/ubuntu/secdt-results/Resultat_valider",
+  "validated_only": true,
+  "phases": {
+    "phase2_caliper": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1000/caliper.log",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1000/report.html",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1000/summary.txt",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1500/caliper.log",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1500/report.html",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1500/summary.txt",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/2000/caliper.log",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/2000/report.html",
+        "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/2000/summary.txt"
+      ],
+      "subsets": {
+        "1000": [
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1000/caliper.log",
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1000/report.html",
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1000/summary.txt"
+        ],
+        "1500": [
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1500/caliper.log",
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1500/report.html",
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/1500/summary.txt"
+        ],
+        "2000": [
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/2000/caliper.log",
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/2000/report.html",
+          "/home/ubuntu/secdt-results/Resultat_valider/phase2_caliper/2000/summary.txt"
+        ]
+      }
+    },
+    "phase3": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase3",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase3/phase3_report.json"
+      ]
+    },
+    "phase4_s1": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase4_s1",
+      "summary_file": "/home/ubuntu/secdt-results/Resultat_valider/phase4_s1/phase4_s1_summary.json",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase4_s1/phase4_s1_summary.json"
+      ],
+      "summary_preview": {
+        "phase": "phase4_s1_nominal",
+        "runset_id": "phase4_s1_20260314T172001Z",
+        "n_runs": 10,
+        "success_rate": 1.0,
+        "emission_interval_ms": 1000,
+        "latency_ms": {
+          "end_to_end": {
+            "mean": 915.3,
+            "median": 911.0,
+            "p95": 937.2,
+            "p99": 938.64
+          },
+          "ipfs_total": {
+            "mean": 95.5,
+            "median": 94.0,
+            "p95": 103.1,
+            "p99": 103.82
+          },
+          "fabric_commit": {
+            "mean": 661.4,
+            "median": 658.5,
+            "p95": 675.3,
+            "p99": 677.46
+          }
+        }
+      }
+    },
+    "phase5_s2": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase5_s2",
+      "summary_file": "/home/ubuntu/secdt-results/Resultat_valider/phase5_s2/phase5_s2_summary.json",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase5_s2/phase5_s2_summary.json"
+      ],
+      "summary_preview": {
+        "phase": "phase5_s2_fd001_fixed",
+        "runset_id": "phase5_s2_fd001_fixed_20260314T200018Z",
+        "n_cases": 8,
+        "cases": [
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 10,
+            "interval_ms": 500,
+            "n_runs": 10,
+            "wall_clock_s": 16.441,
+            "success_rate": 1.0,
+            "throughput_rps": 0.608,
+            "network_cost_bytes": 9238,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 911.8,
+                "median": 908.5,
+                "p95": 930.85,
+                "p99": 933.37
+              },
+              "ipfs_total": {
+                "mean": 97.9,
+                "median": 97.0,
+                "p95": 104.65,
+                "p99": 105.73
+              },
+              "fabric_commit": {
+                "mean": 655.6,
+                "median": 654.5,
+                "p95": 667.5,
+                "p99": 671.1
+              }
+            }
+          },
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 10,
+            "interval_ms": 1000,
+            "n_runs": 10,
+            "wall_clock_s": 21.497,
+            "success_rate": 1.0,
+            "throughput_rps": 0.465,
+            "network_cost_bytes": 9278,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 916.8,
+                "median": 914.5,
+                "p95": 932.6,
+                "p99": 936.92
+              },
+              "ipfs_total": {
+                "mean": 99.1,
+                "median": 100.0,
+                "p95": 105.65,
+                "p99": 106.73
+              },
+              "fabric_commit": {
+                "mean": 660.2,
+                "median": 657.5,
+                "p95": 675.6,
+                "p99": 679.92
+              }
+            }
+          },
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 25,
+            "interval_ms": 500,
+            "n_runs": 25,
+            "wall_clock_s": 40.965,
+            "success_rate": 1.0,
+            "throughput_rps": 0.61,
+            "network_cost_bytes": 23156,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 909.24,
+                "median": 909,
+                "p95": 924.0,
+                "p99": 930.84
+              },
+              "ipfs_total": {
+                "mean": 95.6,
+                "median": 97,
+                "p95": 101.8,
+                "p99": 102.0
+              },
+              "fabric_commit": {
+                "mean": 659.96,
+                "median": 660,
+                "p95": 670.0,
+                "p99": 671.52
+              }
+            }
+          },
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 25,
+            "interval_ms": 1000,
+            "n_runs": 25,
+            "wall_clock_s": 53.666,
+            "success_rate": 1.0,
+            "throughput_rps": 0.466,
+            "network_cost_bytes": 23256,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 913.88,
+                "median": 913,
+                "p95": 932.0,
+                "p99": 935.28
+              },
+              "ipfs_total": {
+                "mean": 96.28,
+                "median": 98,
+                "p95": 101.8,
+                "p99": 104.28
+              },
+              "fabric_commit": {
+                "mean": 659.44,
+                "median": 658,
+                "p95": 672.6,
+                "p99": 673.0
+              }
+            }
+          },
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 50,
+            "interval_ms": 500,
+            "n_runs": 50,
+            "wall_clock_s": 82.213,
+            "success_rate": 1.0,
+            "throughput_rps": 0.608,
+            "network_cost_bytes": 46362,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 916.26,
+                "median": 914.0,
+                "p95": 934.55,
+                "p99": 938.0
+              },
+              "ipfs_total": {
+                "mean": 100.58,
+                "median": 101.0,
+                "p95": 111.1,
+                "p99": 112.51
+              },
+              "fabric_commit": {
+                "mean": 660.34,
+                "median": 660.0,
+                "p95": 671.55,
+                "p99": 674.53
+              }
+            }
+          },
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 50,
+            "interval_ms": 1000,
+            "n_runs": 50,
+            "wall_clock_s": 107.506,
+            "success_rate": 1.0,
+            "throughput_rps": 0.465,
+            "network_cost_bytes": 46562,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 919.94,
+                "median": 920.0,
+                "p95": 931.55,
+                "p99": 933.51
+              },
+              "ipfs_total": {
+                "mean": 99.88,
+                "median": 100.0,
+                "p95": 109.1,
+                "p99": 111.53
+              },
+              "fabric_commit": {
+                "mean": 662.28,
+                "median": 662.0,
+                "p95": 669.55,
+                "p99": 674.02
+              }
+            }
+          },
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 100,
+            "interval_ms": 500,
+            "n_runs": 100,
+            "wall_clock_s": 166.66,
+            "success_rate": 1.0,
+            "throughput_rps": 0.6,
+            "network_cost_bytes": 93198,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 936.25,
+                "median": 912.0,
+                "p95": 1014.1,
+                "p99": 1031.21
+              },
+              "ipfs_total": {
+                "mean": 126.56,
+                "median": 105.0,
+                "p95": 194.3,
+                "p99": 209.01
+              },
+              "fabric_commit": {
+                "mean": 655.79,
+                "median": 655.5,
+                "p95": 667.1,
+                "p99": 684.0
+              }
+            }
+          },
+          {
+            "phase": "phase5_s2_fd001_fixed",
+            "machine_count": 100,
+            "interval_ms": 1000,
+            "n_runs": 100,
+            "wall_clock_s": 216.547,
+            "success_rate": 1.0,
+            "throughput_rps": 0.462,
+            "network_cost_bytes": 93598,
+            "latency_ms": {
+              "end_to_end": {
+                "mean": 935.4,
+                "median": 915.0,
+                "p95": 1005.05,
+                "p99": 1020.16
+              },
+              "ipfs_total": {
+                "mean": 120.49,
+                "median": 100.0,
+                "p95": 187.15,
+                "p99": 203.06
+              },
+              "fabric_commit": {
+                "mean": 660.16,
+                "median": 660.0,
+                "p95": 669.05,
+                "p99": 671.0
+              }
+            }
+          }
+        ],
+        "first_detected_saturation": null
+      }
+    },
+    "phase6_s3": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase6_s3",
+      "summary_file": "/home/ubuntu/secdt-results/Resultat_valider/phase6_s3/phase6_s3_summary.json",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase6_s3/phase6_s3_summary.json"
+      ],
+      "summary_preview": {
+        "phase": "phase6_s3",
+        "runset_id": "phase6_s3_20260314T204859Z",
+        "scenarios": [
+          {
+            "scenario": "S3-A",
+            "name": "tampering_before_anchoring",
+            "machine_id": "machine-0001-s3a-20260314T204859Z",
+            "cid": "Qmb3oNo4y9ecYqkVr1y3QsZBpLNmY4AaynjWQnvSnCzs2s",
+            "stored_hash": "4ca4e6682c9dfdcd390ca274c6a02e682712d526c8f87b2cefe7dbe9f332b6af",
+            "ipfs_content_hash": "8750df2d1420ce64cbe396e2f41b30abad5bba1ee345c4799f09e06b86318452",
+            "invoke_ok": true,
+            "verify_ok": true,
+            "history_ok": true,
+            "history_length": 1,
+            "stored_hash_match": true,
+            "stored_cid_match": true,
+            "tamper_detected": true,
+            "success": true,
+            "timing_ms": {
+              "ipfs_add_cid": 90,
+              "ipfs_cat_check": 17,
+              "fabric_submit_commit": 663,
+              "fabric_query_phase": 141,
+              "end_to_end_total": 911
+            }
+          },
+          {
+            "scenario": "S3-B",
+            "name": "replay_stale_snapshot",
+            "machine_id": "machine-replay-20260314T204859Z",
+            "history_length": 2,
+            "cycles_in_history": [
+              1,
+              2
+            ],
+            "head_cycle": 1,
+            "max_cycle_seen": 2,
+            "replay_detected": true,
+            "newer_invoke_ok": true,
+            "older_replay_invoke_ok": true,
+            "success": true
+          },
+          {
+            "scenario": "S3-C",
+            "name": "unauthorized_registration",
+            "machine_id": "machine-0001-s3c-20260314T204859Z",
+            "invoke_ok": false,
+            "unauthorized_rejected": true,
+            "evidence": "Error: error endorsing invoke: rpc error: code = Unknown desc = error validating proposal: access denied: channel [secdt-channel] creator org unknown, creator is malformed - proposal response: <nil>",
+            "success": true
+          },
+          {
+            "scenario": "S3-D",
+            "name": "audit_reconstruction",
+            "machine_id": "machine-audit-20260314T204859Z",
+            "history_length": 3,
+            "records_checked": 3,
+            "all_consistent": true,
+            "records": [
+              {
+                "cid": "QmTZYVbVZkU5qwbQMmx6gdM5PWpxfjQxAVqhuAdMt4fAuZ",
+                "stored_hash": "7fe3abfb1e584919987395907e3125e74a26a56aeae86b93256921ceb1ed31a6",
+                "ipfs_hash": "7fe3abfb1e584919987395907e3125e74a26a56aeae86b93256921ceb1ed31a6",
+                "consistent": true
+              },
+              {
+                "cid": "QmYScufzQPbj5M1JScBJh3s6X53qWQCSDh6ruHDyX3M3KV",
+                "stored_hash": "9711400b79736d7dfc0715fc2194d251c2ec0e1f9f4a0f55fa1fa94e26a51769",
+                "ipfs_hash": "9711400b79736d7dfc0715fc2194d251c2ec0e1f9f4a0f55fa1fa94e26a51769",
+                "consistent": true
+              },
+              {
+                "cid": "QmfCq4LwKtsfmTGV6PHJkwbSDHXe1sxsGVkJgpYEFkw81J",
+                "stored_hash": "c4ddfd6f2bf7c8ccb7cee152ec3205813b12fdd2e598757a43be593daecb0d7e",
+                "ipfs_hash": "c4ddfd6f2bf7c8ccb7cee152ec3205813b12fdd2e598757a43be593daecb0d7e",
+                "consistent": true
+              }
+            ],
+            "success": true
+          }
+        ],
+        "metrics": {
+          "tamper_detection_rate": 1.0,
+          "replay_detection_rate": 1.0,
+          "unauthorized_rejection_rate": 1.0,
+          "audit_reconstruction_success": 1.0,
+          "cid_hash_consistency": 1.0
+        },
+        "overall_success_rate": 1.0
+      }
+    },
+    "phase7_s4": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase7_s4",
+      "summary_file": "/home/ubuntu/secdt-results/Resultat_valider/phase7_s4/phase7_s4_summary.json",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase7_s4/phase7_s4_summary.json"
+      ],
+      "summary_preview": {
+        "phase": "phase7_s4",
+        "runset_id": "phase7_s4_20260314T212954Z",
+        "n_runs_per_system": 20,
+        "emission_interval_ms": 500,
+        "systems": [
+          {
+            "system": "postgresql_centralized",
+            "n_runs": 20,
+            "success_rate": 1.0,
+            "throughput_rps": 1.091,
+            "latency_ms": {
+              "mean": 171.7,
+              "median": 169.0,
+              "p95": 186.55,
+              "p99": 194.91
+            },
+            "storage_bytes": {
+              "on_chain": 0,
+              "off_chain": 0,
+              "database_total": 15816
+            },
+            "auditability": {
+              "history_reconstructable": true,
+              "integrity_proof_strength": "low"
+            }
+          },
+          {
+            "system": "fabric_only",
+            "n_runs": 20,
+            "success_rate": 1.0,
+            "throughput_rps": 0.648,
+            "latency_ms": {
+              "mean": 805.55,
+              "median": 803.0,
+              "p95": 824.2,
+              "p99": 827.24
+            },
+            "storage_bytes": {
+              "on_chain": 3832,
+              "off_chain": 0,
+              "database_total": 0
+            },
+            "auditability": {
+              "history_reconstructable": true,
+              "integrity_proof_strength": "medium"
+            }
+          },
+          {
+            "system": "secdt_full",
+            "n_runs": 20,
+            "success_rate": 1.0,
+            "throughput_rps": 0.61,
+            "latency_ms": {
+              "mean": 902.8,
+              "median": 899.5,
+              "p95": 925.2,
+              "p99": 928.24
+            },
+            "storage_bytes": {
+              "on_chain": 4332,
+              "off_chain": 8658,
+              "database_total": 0
+            },
+            "auditability": {
+              "history_reconstructable": true,
+              "integrity_proof_strength": "high"
+            }
+          }
+        ],
+        "best_compromise": "secdt_full",
+        "interpretation": {
+          "lowest_raw_latency": "postgresql_centralized",
+          "highest_throughput": "postgresql_centralized",
+          "strongest_auditability": "secdt_full",
+          "strongest_integrity_proof": "secdt_full"
+        }
+      }
+    },
+    "phase8_s5": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase8_s5",
+      "summary_file": "/home/ubuntu/secdt-results/Resultat_valider/phase8_s5/phase8_s5_summary.json",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase8_s5/phase8_s5_summary.json"
+      ],
+      "summary_preview": {
+        "phase": "phase8_s5",
+        "runset_id": "phase8_s5_20260314T214916Z",
+        "n_runs_per_case": 20,
+        "emission_interval_ms": 500,
+        "baseline_case": "case_a_local_only",
+        "phase7_postgresql_reference": "/home/ubuntu/secdt-phase7/resultats_phase7/phase7_s4_20260314T212954Z/phase7_s4_summary.json",
+        "cases": [
+          {
+            "case": "case_a_local_only",
+            "n_runs": 20,
+            "success_rate": 1.0,
+            "latency_ms": {
+              "mean": 11.3,
+              "median": 11.0,
+              "p95": 13.05,
+              "p99": 13.81
+            },
+            "cpu_busy_pct": {
+              "mean": 12.778,
+              "median": 12.829,
+              "p95": 14.782,
+              "p99": 15.929
+            },
+            "mem_delta_mb": {
+              "mean": 0.325,
+              "median": 0.457,
+              "p95": 0.492,
+              "p99": 0.492
+            },
+            "network_total_bytes": {
+              "mean": 388,
+              "median": 0.0,
+              "p95": 2956.2,
+              "p99": 4205.64,
+              "sum": 7760
+            },
+            "data_manipulated_bytes": {
+              "mean": 930.8,
+              "median": 931.0,
+              "p95": 937.0,
+              "p99": 937.0,
+              "sum": 18616
+            },
+            "storage_bytes": {
+              "on_chain": 0,
+              "off_chain": 0
+            },
+            "relative_overhead_vs_case_a": {
+              "latency_ratio": 1.0,
+              "cpu_ratio": 1.0,
+              "mem_ratio": 1.0,
+              "network_ratio": 1.0,
+              "data_ratio": 1.0
+            },
+            "relative_vs_phase7_postgresql": {
+              "latency_ratio": 0.0658,
+              "storage_ratio_per_run": 1.177
+            }
+          },
+          {
+            "case": "case_b_ipfs_only",
+            "n_runs": 20,
+            "success_rate": 1.0,
+            "latency_ms": {
+              "mean": 106.1,
+              "median": 105.5,
+              "p95": 114.05,
+              "p99": 114.81
+            },
+            "cpu_busy_pct": {
+              "mean": 10.281,
+              "median": 10.378,
+              "p95": 11.207,
+              "p99": 11.213
+            },
+            "mem_delta_mb": {
+              "mean": -0.046,
+              "median": 0.319,
+              "p95": 0.751,
+              "p99": 1.122
+            },
+            "network_total_bytes": {
+              "mean": 7149.7,
+              "median": 4157.0,
+              "p95": 17215.55,
+              "p99": 17467.11,
+              "sum": 142994
+            },
+            "data_manipulated_bytes": {
+              "mean": 955.8,
+              "median": 956.0,
+              "p95": 962.0,
+              "p99": 962.0,
+              "sum": 19116
+            },
+            "storage_bytes": {
+              "on_chain": 0,
+              "off_chain": 8618
+            },
+            "relative_overhead_vs_case_a": {
+              "latency_ratio": 9.3894,
+              "cpu_ratio": 0.8046,
+              "mem_ratio": -0.1415,
+              "network_ratio": 18.4271,
+              "data_ratio": 1.0269
+            },
+            "relative_vs_phase7_postgresql": {
+              "latency_ratio": 0.6179,
+              "storage_ratio_per_run": 1.2086
+            }
+          },
+          {
+            "case": "case_c_fabric_only",
+            "n_runs": 20,
+            "success_rate": 1.0,
+            "latency_ms": {
+              "mean": 796.9,
+              "median": 797.5,
+              "p95": 805.35,
+              "p99": 810.67
+            },
+            "cpu_busy_pct": {
+              "mean": 6.042,
+              "median": 5.941,
+              "p95": 6.93,
+              "p99": 6.956
+            },
+            "mem_delta_mb": {
+              "mean": -6.906,
+              "median": -5.875,
+              "p95": 2.233,
+              "p99": 4.175
+            },
+            "network_total_bytes": {
+              "mean": 218663.35,
+              "median": 219097.0,
+              "p95": 232320.7,
+              "p99": 232574.54,
+              "sum": 4373267
+            },
+            "data_manipulated_bytes": {
+              "mean": 1172.4,
+              "median": 1174.0,
+              "p95": 1177.0,
+              "p99": 1177.0,
+              "sum": 23448
+            },
+            "storage_bytes": {
+              "on_chain": 3672,
+              "off_chain": 0
+            },
+            "relative_overhead_vs_case_a": {
+              "latency_ratio": 70.5221,
+              "cpu_ratio": 0.4728,
+              "mem_ratio": -21.2492,
+              "network_ratio": 563.5653,
+              "data_ratio": 1.2596
+            },
+            "relative_vs_phase7_postgresql": {
+              "latency_ratio": 4.6412,
+              "storage_ratio_per_run": 1.4825
+            }
+          },
+          {
+            "case": "case_d_ipfs_fabric",
+            "n_runs": 20,
+            "success_rate": 1.0,
+            "latency_ms": {
+              "mean": 890.2,
+              "median": 890.0,
+              "p95": 910.25,
+              "p99": 914.05
+            },
+            "cpu_busy_pct": {
+              "mean": 6.204,
+              "median": 6.224,
+              "p95": 6.77,
+              "p99": 6.831
+            },
+            "mem_delta_mb": {
+              "mean": -6.34,
+              "median": -6.269,
+              "p95": 2.489,
+              "p99": 5.77
+            },
+            "network_total_bytes": {
+              "mean": 230404.8,
+              "median": 231679.5,
+              "p95": 245447.75,
+              "p99": 245656.75,
+              "sum": 4608096
+            },
+            "data_manipulated_bytes": {
+              "mean": 1736.3,
+              "median": 1738.0,
+              "p95": 1744.0,
+              "p99": 1744.0,
+              "sum": 34726
+            },
+            "storage_bytes": {
+              "on_chain": 4372,
+              "off_chain": 8698
+            },
+            "relative_overhead_vs_case_a": {
+              "latency_ratio": 78.7788,
+              "cpu_ratio": 0.4855,
+              "mem_ratio": -19.5077,
+              "network_ratio": 593.8268,
+              "data_ratio": 1.8654
+            },
+            "relative_vs_phase7_postgresql": {
+              "latency_ratio": 5.1846,
+              "storage_ratio_per_run": 2.1956
+            }
+          }
+        ]
+      }
+    },
+    "phase9_s6": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase9_s6",
+      "summary_file": "/home/ubuntu/secdt-results/Resultat_valider/phase9_s6/phase9_s6_summary.json",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase9_s6/phase9_s6_summary.json"
+      ],
+      "summary_preview": {
+        "phase": "phase9_s6",
+        "runset_id": "phase9_s6_20260314T221227Z",
+        "n_scenarios": 4,
+        "scenarios": [
+          {
+            "scenario": "s6_ipfs_loss_1_node",
+            "cid": "QmaCJjtjd48AndKAnuLEEcVDHG6M95oQKxNqmtii771x1j",
+            "expected_hash": "d016fb86cfe68b5cac3d910d4668a4c150d281e32f27a3d2f3cc983e66966265",
+            "retrievable_after_failure": true,
+            "recovery_ms": 16,
+            "auditability_preserved": true,
+            "history_length": 1,
+            "retrieved_hash": "d016fb86cfe68b5cac3d910d4668a4c150d281e32f27a3d2f3cc983e66966265",
+            "cid_hash_consistent": true,
+            "success": true
+          },
+          {
+            "scenario": "s6_ipfs_loss_2_nodes",
+            "cid": "QmXhouDb9XWP9SXkWR6wsQ2v9o4zvSKkGiSY8WPAK5zyHC",
+            "expected_hash": "bada079421232f7462095936d769f47a40f8f39389865ec1b93cb9856f79a030",
+            "retrievable_after_failure": true,
+            "recovery_ms": 20,
+            "auditability_preserved": true,
+            "history_length": 1,
+            "retrieved_hash": "bada079421232f7462095936d769f47a40f8f39389865ec1b93cb9856f79a030",
+            "cid_hash_consistent": true,
+            "success": true
+          },
+          {
+            "scenario": "s6_orderer_loss",
+            "orderer_target": "ubuntu@orderer-fabric-2",
+            "invoke_ok_during_orderer_loss": true,
+            "history_ok_after_orderer_loss": true,
+            "history_length": 1,
+            "service_continuity_preserved": true,
+            "recovery_ms": null,
+            "latency_under_failure_ms": 655,
+            "success": true
+          },
+          {
+            "scenario": "s6_peer_loss",
+            "peer_target": "ubuntu@peer-fabric-2",
+            "invoke_ok_during_peer_loss": true,
+            "history_ok_after_peer_loss": true,
+            "history_length": 1,
+            "service_continuity_preserved": true,
+            "recovery_ms": null,
+            "latency_under_failure_ms": 672,
+            "success": true
+          }
+        ],
+        "metrics": {
+          "availability_rate": 1.0,
+          "ipfs_retrievability_rate": 1.0,
+          "service_continuity_rate": 1.0,
+          "auditability_preserved_rate": 1.0
+        }
+      }
+    },
+    "phase10_ipfs_filesize": {
+      "found": true,
+      "path": "/home/ubuntu/secdt-results/Resultat_valider/phase10_ipfs_filesize",
+      "summary_file": "/home/ubuntu/secdt-results/Resultat_valider/phase10_ipfs_filesize/phase10_ipfs_filesize_summary.json",
+      "files": [
+        "/home/ubuntu/secdt-results/Resultat_valider/phase10_ipfs_filesize/phase10_ipfs_filesize_summary.json"
+      ],
+      "summary_preview": {
+        "phase": "phase10_ipfs_filesize",
+        "runset_id": "phase10_ipfs_filesize_20260315T015708Z",
+        "repetitions_per_size": 5,
+        "sizes_bytes": [
+          1024,
+          10240,
+          102400,
+          262144,
+          524288,
+          1048576,
+          2097152,
+          5242880,
+          10485760
+        ],
+        "cases": [
+          {
+            "file_size_bytes": 1024,
+            "file_size_label": "1KB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 40.1847,
+              "median": 40.1822,
+              "p95": 44.8412,
+              "p99": 45.0339
+            },
+            "cat_latency_ms": {
+              "mean": 2.158,
+              "median": 2.1523,
+              "p95": 2.3523,
+              "p99": 2.3584
+            },
+            "write_throughput_mbps": {
+              "mean": 0.0246,
+              "median": 0.0243,
+              "p95": 0.0283,
+              "p99": 0.0288
+            },
+            "read_throughput_mbps": {
+              "mean": 0.4552,
+              "median": 0.4537,
+              "p95": 0.5006,
+              "p99": 0.5042
+            }
+          },
+          {
+            "file_size_bytes": 10240,
+            "file_size_label": "10KB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 40.2578,
+              "median": 38.8498,
+              "p95": 47.1855,
+              "p99": 48.4288
+            },
+            "cat_latency_ms": {
+              "mean": 2.2606,
+              "median": 2.2725,
+              "p95": 2.3962,
+              "p99": 2.4049
+            },
+            "write_throughput_mbps": {
+              "mean": 0.2455,
+              "median": 0.2514,
+              "p95": 0.2705,
+              "p99": 0.2715
+            },
+            "read_throughput_mbps": {
+              "mean": 4.335,
+              "median": 4.2973,
+              "p95": 4.7251,
+              "p99": 4.8
+            }
+          },
+          {
+            "file_size_bytes": 102400,
+            "file_size_label": "100KB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 41.1609,
+              "median": 40.4368,
+              "p95": 45.2124,
+              "p99": 45.6861
+            },
+            "cat_latency_ms": {
+              "mean": 3.3284,
+              "median": 3.2967,
+              "p95": 3.8298,
+              "p99": 3.9144
+            },
+            "write_throughput_mbps": {
+              "mean": 2.3851,
+              "median": 2.415,
+              "p95": 2.6084,
+              "p99": 2.6398
+            },
+            "read_throughput_mbps": {
+              "mean": 29.6347,
+              "median": 29.6224,
+              "p95": 32.635,
+              "p99": 32.6872
+            }
+          },
+          {
+            "file_size_bytes": 262144,
+            "file_size_label": "256KB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 44.7552,
+              "median": 38.8495,
+              "p95": 60.7537,
+              "p99": 64.2335
+            },
+            "cat_latency_ms": {
+              "mean": 6.1195,
+              "median": 4.8478,
+              "p95": 10.6719,
+              "p99": 11.74
+            },
+            "write_throughput_mbps": {
+              "mean": 5.8242,
+              "median": 6.4351,
+              "p95": 6.5893,
+              "p99": 6.6157
+            },
+            "read_throughput_mbps": {
+              "mean": 48.0981,
+              "median": 51.5698,
+              "p95": 65.635,
+              "p99": 68.3177
+            }
+          },
+          {
+            "file_size_bytes": 524288,
+            "file_size_label": "512KB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 43.739,
+              "median": 43.6954,
+              "p95": 49.7269,
+              "p99": 50.4993
+            },
+            "cat_latency_ms": {
+              "mean": 10.2834,
+              "median": 6.6128,
+              "p95": 22.0449,
+              "p99": 25.05
+            },
+            "write_throughput_mbps": {
+              "mean": 11.5617,
+              "median": 11.4429,
+              "p95": 13.2899,
+              "p99": 13.5511
+            },
+            "read_throughput_mbps": {
+              "mean": 66.6819,
+              "median": 75.6109,
+              "p95": 85.6906,
+              "p99": 86.8088
+            }
+          },
+          {
+            "file_size_bytes": 1048576,
+            "file_size_label": "1MB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 46.9367,
+              "median": 47.3339,
+              "p95": 48.8375,
+              "p99": 48.917
+            },
+            "cat_latency_ms": {
+              "mean": 8.7458,
+              "median": 8.5268,
+              "p95": 10.9414,
+              "p99": 11.4123
+            },
+            "write_throughput_mbps": {
+              "mean": 21.3363,
+              "median": 21.1265,
+              "p95": 22.5097,
+              "p99": 22.6546
+            },
+            "read_throughput_mbps": {
+              "mean": 117.3847,
+              "median": 117.2773,
+              "p95": 138.8147,
+              "p99": 141.7929
+            }
+          },
+          {
+            "file_size_bytes": 2097152,
+            "file_size_label": "2MB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 58.2189,
+              "median": 55.2459,
+              "p95": 68.6099,
+              "p99": 68.8989
+            },
+            "cat_latency_ms": {
+              "mean": 11.4889,
+              "median": 11.5645,
+              "p95": 13.1183,
+              "p99": 13.2485
+            },
+            "write_throughput_mbps": {
+              "mean": 35.0415,
+              "median": 36.2018,
+              "p95": 40.1245,
+              "p99": 40.1295
+            },
+            "read_throughput_mbps": {
+              "mean": 176.3925,
+              "median": 172.9431,
+              "p95": 203.7443,
+              "p99": 206.2724
+            }
+          },
+          {
+            "file_size_bytes": 5242880,
+            "file_size_label": "5MB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 76.0667,
+              "median": 75.1042,
+              "p95": 84.0854,
+              "p99": 85.8093
+            },
+            "cat_latency_ms": {
+              "mean": 23.6322,
+              "median": 20.8554,
+              "p95": 29.9851,
+              "p99": 30.3827
+            },
+            "write_throughput_mbps": {
+              "mean": 66.0697,
+              "median": 66.5742,
+              "p95": 71.3211,
+              "p99": 72.1479
+            },
+            "read_throughput_mbps": {
+              "mean": 219.7879,
+              "median": 239.7461,
+              "p95": 266.523,
+              "p99": 270.9159
+            }
+          },
+          {
+            "file_size_bytes": 10485760,
+            "file_size_label": "10MB",
+            "n_runs": 5,
+            "add_success_rate": 1.0,
+            "retrieval_success_rate": 1.0,
+            "hash_consistency_rate": 1.0,
+            "add_latency_ms": {
+              "mean": 108.2974,
+              "median": 100.6802,
+              "p95": 137.5692,
+              "p99": 144.3258
+            },
+            "cat_latency_ms": {
+              "mean": 50.6905,
+              "median": 47.7392,
+              "p95": 73.311,
+              "p99": 76.9178
+            },
+            "write_throughput_mbps": {
+              "mean": 94.771,
+              "median": 99.3244,
+              "p95": 107.1234,
+              "p99": 108.3378
+            },
+            "read_throughput_mbps": {
+              "mean": 221.3219,
+              "median": 209.4715,
+              "p95": 338.0382,
+              "p99": 361.5977
+            }
+          }
+        ]
+      }
+    }
+  }
+}

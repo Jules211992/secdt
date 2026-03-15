@@ -1,0 +1,59 @@
+{
+  "phase": "phase9_s6",
+  "runset_id": "phase9_s6_20260314T221227Z",
+  "n_scenarios": 4,
+  "scenarios": [
+    {
+      "scenario": "s6_ipfs_loss_1_node",
+      "cid": "QmaCJjtjd48AndKAnuLEEcVDHG6M95oQKxNqmtii771x1j",
+      "expected_hash": "d016fb86cfe68b5cac3d910d4668a4c150d281e32f27a3d2f3cc983e66966265",
+      "retrievable_after_failure": true,
+      "recovery_ms": 16,
+      "auditability_preserved": true,
+      "history_length": 1,
+      "retrieved_hash": "d016fb86cfe68b5cac3d910d4668a4c150d281e32f27a3d2f3cc983e66966265",
+      "cid_hash_consistent": true,
+      "success": true
+    },
+    {
+      "scenario": "s6_ipfs_loss_2_nodes",
+      "cid": "QmXhouDb9XWP9SXkWR6wsQ2v9o4zvSKkGiSY8WPAK5zyHC",
+      "expected_hash": "bada079421232f7462095936d769f47a40f8f39389865ec1b93cb9856f79a030",
+      "retrievable_after_failure": true,
+      "recovery_ms": 20,
+      "auditability_preserved": true,
+      "history_length": 1,
+      "retrieved_hash": "bada079421232f7462095936d769f47a40f8f39389865ec1b93cb9856f79a030",
+      "cid_hash_consistent": true,
+      "success": true
+    },
+    {
+      "scenario": "s6_orderer_loss",
+      "orderer_target": "ubuntu@orderer-fabric-2",
+      "invoke_ok_during_orderer_loss": true,
+      "history_ok_after_orderer_loss": true,
+      "history_length": 1,
+      "service_continuity_preserved": true,
+      "recovery_ms": null,
+      "latency_under_failure_ms": 655,
+      "success": true
+    },
+    {
+      "scenario": "s6_peer_loss",
+      "peer_target": "ubuntu@peer-fabric-2",
+      "invoke_ok_during_peer_loss": true,
+      "history_ok_after_peer_loss": true,
+      "history_length": 1,
+      "service_continuity_preserved": true,
+      "recovery_ms": null,
+      "latency_under_failure_ms": 672,
+      "success": true
+    }
+  ],
+  "metrics": {
+    "availability_rate": 1.0,
+    "ipfs_retrievability_rate": 1.0,
+    "service_continuity_rate": 1.0,
+    "auditability_preserved_rate": 1.0
+  }
+}

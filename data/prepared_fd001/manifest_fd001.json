@@ -1,0 +1,15 @@
+{
+  "dataset": "NASA CMAPSS FD001",
+  "zip_file": "/home/ubuntu/secdt-data/raw/CMAPSSData.zip",
+  "extract_dir": "/home/ubuntu/secdt-data/raw/CMAPSSData",
+  "prepared_dir": "/home/ubuntu/secdt-data/prepared_fd001",
+  "train_source": "/home/ubuntu/secdt-data/raw/CMAPSSData/train_FD001.txt",
+  "test_source": "/home/ubuntu/secdt-data/raw/CMAPSSData/test_FD001.txt",
+  "rul_source": "/home/ubuntu/secdt-data/raw/CMAPSSData/RUL_FD001.txt",
+  "train_rows": 20631,
+  "test_rows": 13096,
+  "rul_rows": 100,
+  "train_units": 100,
+  "test_units": 100,
+  "status": "downloaded_extracted_prepared"
+}
